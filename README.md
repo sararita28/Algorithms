@@ -19,6 +19,7 @@ This repository is under construction. I am simply using it for note-taking purp
   <li>Partitioning</li>
   </ul>
 <h3>Graph representation</h3>
+<p><b>Three ways to store graphs: </b>edge lists, adjacency matrices, and adjacency lists.</p>
 <ul> <h6>Concepts</h6>
   <li>Vertex</li>
   <li>Edge</li>
@@ -32,8 +33,12 @@ This repository is under construction. I am simply using it for note-taking purp
   <li>Directed acyclic graph (a.k.a dag)</li>
   <li>Entering and leaving a vertex/li>
   <li>In-degree vs out-degree</li>
+  <li>Edge list</li>
+  <li>Adjacency matrices</li>
+  <li>Free tree</li>
 
 
   </ul>
 <h3>Depth-first search</h3>
 <h3>Breadth-first search</h3>
+<p> finds shortest paths from a given source vertex to all other vertices, in terms of the number of edges in the paths.</p>
