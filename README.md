@@ -123,6 +123,48 @@ This repository is under construction. I am simply using it for note-taking purp
   </tr>
 </table>
 
+<p><b>Linked Lists Complexity</b></p>
+<table>
+  <tr>
+    <th>Operation</th>
+    <th>Singly Linked</th>
+    <th>Doubly Linked</th>
+  </tr>
+  <tr>
+    <td>Search</td>
+    <td>O(n)</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Insert at Head</td>
+    <td>O(1)</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Insert at tail</td>
+    <td>O(1)</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Remove at head</td>
+    <td>O(1)</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Remove at tail</td>
+    <td>O(n)</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Remove in middle</td>
+    <td>O(n)</td>
+    <td>O(n)</td>
+  </tr>
+</table>
+
+
+
+
 <h1>Algorithms</h1>
 <h3>Binary Search</h3>
 <h3>Asymptotic notation</h3>
