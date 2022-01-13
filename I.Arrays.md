@@ -1,4 +1,4 @@
-###Implementation of arrays
+### Implementation of arrays
 
 class Array { 
     constructor() {
@@ -46,18 +46,19 @@ class Array {
     }
 }
 
-##Time Complexity:
 
-#Accessing an Element
+## Time Complexity:
+
+# Accessing an Element
   //If we know the index
   Time Complexity: O(1)
   
-#Searching for an element Linearly
+# Searching for an element Linearly
 arr.indexOf('X')
 Time Complexity: O(n)
 why: the only way to find the index is by going through the array starting from the first element until it finds an element that has the value ‘X’
 
-#Adding an element
+# Adding an element
   //To the end of the array
   arr.push(x)
   Time Complexity: O(1)
@@ -71,7 +72,7 @@ why: the only way to find the index is by going through the array starting from 
   Time Complexity: O(n)
   
   
-#Remove an element
+# Removing an element
   //at the end of the array
   arr.pop()
   Time Complexity: O(1)
@@ -82,7 +83,7 @@ why: the only way to find the index is by going through the array starting from 
   arr.splice()
   Time Complexity: O(n)
   
-#Concatenate two arrays
+# Concatenating two arrays
   arr.concat(arr2)
   Time Complexity: O(n+m) (n depends on arr' length while m on arr2' length)
   
