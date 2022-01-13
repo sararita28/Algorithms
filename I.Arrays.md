@@ -1,6 +1,6 @@
 ### Implementation of arrays
 
-class Array { 
+//class Array { 
     constructor() {
         this.length = 0;
         this.data = {}
