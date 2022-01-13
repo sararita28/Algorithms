@@ -191,7 +191,37 @@ This repository is under construction. I am simply using it for note-taking purp
 </table>
 
 <h3>Queues</h3>
-<p>A <b>queue></b> is a linear data structure which models real-world queues by having 2 primary operations (i.e. enqueue and dequeue). </p>
+<p>A <b>queue></b> is a linear data structure which models real-world queues by having 2 primary operations (i.e. enqueue and dequeue). Everu queue has a front and a back. We insert elements through the back (enqueuing a.k.a adding or offering) and remove them through the front (dequeuing a.k.a polling). Some examples of their usage include but are not limited to: waiting lines, keep track of the x most recently added elements, web server request management (first come first served), breadth first search graph traversal ... </p>
+
+<p><b>Queues Complexity</b></p>
+<table>
+  <tr>
+    <td>Enqueuing</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Dequeuing</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Peeking</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Contains</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Removal</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Is empty</td>
+    <td>O(1)</td>
+  </tr>
+</table>
+
+
 
 
 <h1>Algorithms</h1>
