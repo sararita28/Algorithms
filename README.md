@@ -190,6 +190,9 @@ This repository is under construction. I am simply using it for note-taking purp
   </tr>
 </table>
 
+<h3>Queues</h3>
+<p>A <b>queue></b> is a linear data structure which models real-world queues by having 2 primary operations (i.e. enqueue and dequeue). </p>
+
 
 <h1>Algorithms</h1>
 <h3>Binary Search</h3>
