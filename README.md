@@ -21,6 +21,53 @@ This repository is under construction. I am simply using it for note-taking purp
     <td>Tree map / Hash Map / Hash table</td>
   </tr>
 </table>
+
+<h3>Computational Complexity Analysis</h3>
+<p>As programmers, we often ask ourselves 2 essential questions: how much time does an algorithms need to finish? and how much space does it need for its computation?</p>
+<p>Big Θ(Theta), Big O and Big Ω (Omega) are used to standardize talking about these two concepts of time and space. </p>
+<p>Big Θ(Theta)</p>
+<p>Big Ω (Omega)</p>
+<p><b>Big O</b> cares about the worst-case scenario. </p>
+<p>The table below represents big-O complexities (ordered from smallest to largest). n represents the size of the input.</p>
+<table>
+  <tr>
+    <td>Constant Time</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Logarithmic Time</td>
+    <td>O(logn)</td>
+  </tr>
+  <tr>
+    <td>Linear Time</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Linearithmic Time</td>
+    <td>O(nlogn)</td>
+  </tr>
+  <tr>
+    <td>Quadric Time</td>
+    <td>O(n^2)</td>
+  </tr>
+  <tr>
+    <td>Cubic Time</td>
+    <td>O(n^3)</td>
+  </tr>
+  <tr>
+    <td>Exponential Time</td>
+    <td>O(b^n)</td>
+  </tr>
+  <tr>
+    <td>Factorial Time</td>
+    <td>O(n!)</td>
+  </tr>
+</table>
+
+
+
+
+
 <h1>Algorithms</h1>
 <h3>Binary Search</h3>
 <h3>Asymptotic notation</h3>
