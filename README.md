@@ -65,7 +65,7 @@ This repository is under construction. I am simply using it for note-taking purp
   </tr>
 </table>
 
-<h3>Arrays Static and Dynamic)</h3>
+<h3>Arrays (Static and Dynamic)</h3>
 <p><b>Static Arrays: </b>are fixed lengt containers containing n elements indexable from the range [0, n-1]. Static arrays are used a lot. Some examples of their usage include but are not limited to: storing and accessing sequential data, temporarily storing objects, used by IO routines and buffers, lookup tables and inverse lookup tables, return multiple values from a function, dynamic programming to cache answers to subproblems...</p>
 <p><b>Array Complexity</b></p>
 <table>
@@ -162,7 +162,33 @@ This repository is under construction. I am simply using it for note-taking purp
   </tr>
 </table>
 
+<h3>Stacks</h3>
+<p>A <b>stack</b> is a one-ended linear data structure which models a real world stack by having two primary operations(i.e. push and pop). Elements in a stack always get removed and added to the top of the pile (LIFO - Last in, first out). It's critical to understand that you ONLY have access to the first element of a stack. Some examples of their usage include but are not limited to: undo mechanisms in text editors, matching brackets and braces in compilers, model a pile of books or plates, support recursion by keeping track of previous function calls, do a depth first search on a graph ... </p>
 
+
+<p><b>Stacks Complexity</b></p>
+<table>
+  <tr>
+    <td>Pushing</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Popping</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Peeking</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Searching</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Size</td>
+    <td>O(1)</td>
+  </tr>
+</table>
 
 
 <h1>Algorithms</h1>
