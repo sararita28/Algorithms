@@ -28,6 +28,7 @@ This repository is under construction. I am simply using it for note-taking purp
 <p>Big Θ(Theta)</p>
 <p>Big Ω (Omega)</p>
 <p><b>Big O</b> cares about the worst-case scenario. </p>
+<p>Drop the constants and the non-dominant terms.</p>
 <p>The table below represents big-O complexities (ordered from smallest to largest). n represents the size of the input.</p>
 <table>
   <tr>
@@ -64,8 +65,41 @@ This repository is under construction. I am simply using it for note-taking purp
   </tr>
 </table>
 
-
-
+<h3>Arrays</h3>
+<p><b>Static Arrays: </b>fixed lengt containers containing n elements indexable from the range [0, n-1]. Static arrays are used a lot. Some examples of their usage include but are not limited to: storing and accessing sequential data, temporarily storing objects, used by IO routines and buffers, lookup tables and inverse lookup tables, return multiple values from a function, dynamic programming to cache answers to subproblems...</p>
+<p><b>Array Complexity</b></p>
+<table>
+  <tr>
+    <th>Operation</th>
+    <th>Static Array</th>
+    <th>Dynamic Array</th>
+  </tr>
+  <tr>
+    <td>Access</td>
+    <td>O(1)</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Search</td>
+    <td>O(n)</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Insertion</td>
+    <td>N/A</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Appending</td>
+    <td>N/A</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Deletion</td>
+    <td>N/A</td>
+    <td>O(n)</td>
+  </tr>
+</table>
 
 
 <h1>Algorithms</h1>
