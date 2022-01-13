@@ -65,8 +65,8 @@ This repository is under construction. I am simply using it for note-taking purp
   </tr>
 </table>
 
-<h3>Arrays</h3>
-<p><b>Static Arrays: </b>fixed lengt containers containing n elements indexable from the range [0, n-1]. Static arrays are used a lot. Some examples of their usage include but are not limited to: storing and accessing sequential data, temporarily storing objects, used by IO routines and buffers, lookup tables and inverse lookup tables, return multiple values from a function, dynamic programming to cache answers to subproblems...</p>
+<h3>Arrays Static and Dynamic)</h3>
+<p><b>Static Arrays: </b>are fixed lengt containers containing n elements indexable from the range [0, n-1]. Static arrays are used a lot. Some examples of their usage include but are not limited to: storing and accessing sequential data, temporarily storing objects, used by IO routines and buffers, lookup tables and inverse lookup tables, return multiple values from a function, dynamic programming to cache answers to subproblems...</p>
 <p><b>Array Complexity</b></p>
 <table>
   <tr>
@@ -101,6 +101,27 @@ This repository is under construction. I am simply using it for note-taking purp
   </tr>
 </table>
 
+<h3>Linked Lists (Singly and Doubly)</h3>
+<p>A <b>linked list</b> is a sequential list of nodes that holds data which points to other nodes also containing data. (every node has pointer to the next node, hence the word "linked" and the last node points to null. Some examples of their usage include but are not limited to: list, queue and stack implementations, creating circular lists, model real world objects (such as trains), separate chaining, implementation of adjacency lists for graphs.</p>
+<p>Terminology: <em>Head:</em> the first node. <em>Tail:</em> the last node. <em>Pointer:</em> reference to another node. <em>Node:</em> An object containing data and pointer(s).</p>
+<p>Singly vs Doubly Linked Lists: <b>Singly linked lists</b> only hold a reference to the next node while <b>doubly linked lists</b> hold a reference to the next and the previous nodes.</p>
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Pros</th>
+    <th>Cons</th>
+  </tr>
+  <tr>
+    <td>Singly</td>
+    <td>Uses less memory, simpler implementation</td>
+    <td>Cannot easily access previous elements</td>
+  </tr>
+  <tr>
+    <td>Doubly</td>
+    <td>Can be traversed backwards</td>
+    <td>Takes 2x memory</td>
+  </tr>
+</table>
 
 <h1>Algorithms</h1>
 <h3>Binary Search</h3>
