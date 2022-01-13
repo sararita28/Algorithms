@@ -1,5 +1,26 @@
 This repository is under construction. I am simply using it for note-taking purposes (for now). Eventually, I would want to organize it better to benefit other people and help them in their learning and understanding of data structures and algorithms. The language used in this rep is Javascript. 
 <h1>Data Structures</h1>
+<p><b>Definition:</b> A data structure (DS) is a way of organizing data so that it can be used efficiently.</p>
+<p><b>Why are they important?: </b>They're essential in creating fast and powerful algorithms, they help manage and organize data, they make code cleaner and easier to understand. They can make the difference between having an "okay" product to having an outstanding one.</p>
+<p>An <b>abstract data type (ADT)</b> is an abstraction of a data structure which provides only the interface to which a data structure must adhere to. The interface doesn't give specific details about how something should be implemented.<em>Analogy: </em> We want to go from one place to another using a mode of transportation (this is our abstract data type). How exactly we do that is our data structure. <em>Examples: </em> In the table below you have a few ADT and some possible ways of implementing them (DS).</p>
+<table>
+  <tr>
+    <th>Abstraction Data Type</th>
+    <th>Data Structure</th>
+  </tr>
+  <tr>
+    <td>List</td>
+    <td>Dynamic Array/ Linked List</td>
+  </tr>
+  <tr>
+    <td>Queue</td>
+    <td>Linked List based Queue / Array based queue / Stack based Queue</td>
+  </tr>
+  <tr>
+    <td>Map</td>
+    <td>Tree map / Hash Map / Hash table</td>
+  </tr>
+</table>
 <h1>Algorithms</h1>
 <h3>Binary Search</h3>
 <h3>Asymptotic notation</h3>
