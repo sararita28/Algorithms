@@ -6,7 +6,7 @@ class Node {
         this.element = element;
         this.next = null
     }
-}
+} </br>
 class LinkedList {
     
     constructor() {
