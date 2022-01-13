@@ -1,4 +1,4 @@
-This repository is under construction. I am simply using it for note-taking purposes (for now). Eventually, I would want to organize it better to benefit other people and help them in their learning and understanding of data structures and algorithms. The language used in this rep is Javascript. 
+🚧 This repository is under construction. I am simply using it for note-taking purposes (for now). Eventually, I would want to organize it better to benefit other people and help them in their learning and understanding of data structures and algorithms. The language used in this rep is <b>Javascript.</b>
 <h1>Data Structures</h1>
 <p><b>Definition:</b> A data structure (DS) is a way of organizing data so that it can be used efficiently.</p>
 <p><b>Why are they important?: </b>They're essential in creating fast and powerful algorithms, they help manage and organize data, they make code cleaner and easier to understand. They can make the difference between having an "okay" product to having an outstanding one.</p>
@@ -25,10 +25,12 @@ This repository is under construction. I am simply using it for note-taking purp
 <h3>Computational Complexity Analysis</h3>
 <p>As programmers, we often ask ourselves 2 essential questions: how much time does an algorithms need to finish? and how much space does it need for its computation?</p>
 <p>Big Θ(Theta), Big O and Big Ω (Omega) are used to standardize talking about these two concepts of time and space. </p>
-<p>Big Θ(Theta)</p>
-<p>Big Ω (Omega)</p>
-<p><b>Big O</b> cares about the worst-case scenario. </p>
-<p>Drop the constants and the non-dominant terms.</p>
+<ul>
+<li><b>Big Θ(Theta)</b> is a tight (upper and lower) bound. It tells you what the least and the most amounts of time are.</li>
+<li><b>Big Ω (Omega)</b> is a lower bound. It tells you what the least amount of time is.</li>
+<li><b>Big O</b> is an upper bound. It cares about the worst-case scenario. When working with large amounts of data, all we mostly care about is Big O.</li>
+</ul>
+<p>When calculating time and space complexity, you want to drop the constants and the non-dominant terms.</p>
 <p>The table below represents big-O complexities (ordered from smallest to largest). n represents the size of the input.</p>
 <table>
   <tr>
@@ -64,8 +66,17 @@ This repository is under construction. I am simply using it for note-taking purp
     <td>O(n!)</td>
   </tr>
 </table>
+<h2>Types of Data Structures:</h2>
+<ul>
+    <li>Arrays</li>
+    <li>Linked Lists</li>
+    <li>Stacks</li>
+    <li>Queues</li>
+</ul>
 
-<h3>Arrays (Static and Dynamic)</h3>
+---
+
+<h3>I. Arrays (Static and Dynamic)</h3>
 <p><b>Static Arrays: </b>are fixed lengt containers containing n elements indexable from the range [0, n-1]. Static arrays are used a lot. Some examples of their usage include but are not limited to: storing and accessing sequential data, temporarily storing objects, used by IO routines and buffers, lookup tables and inverse lookup tables, return multiple values from a function, dynamic programming to cache answers to subproblems...</p>
 <p><b>Array Complexity</b></p>
 <table>
@@ -101,7 +112,9 @@ This repository is under construction. I am simply using it for note-taking purp
   </tr>
 </table>
 
-<h3>Linked Lists (Singly and Doubly)</h3>
+---
+
+<h3> II. Linked Lists (Singly and Doubly)</h3>
 <p>A <b>linked list</b> is a sequential list of nodes that holds data which points to other nodes also containing data. (every node has pointer to the next node, hence the word "linked" and the last node points to null. Some examples of their usage include but are not limited to: list, queue and stack implementations, creating circular lists, model real world objects (such as trains), separate chaining, implementation of adjacency lists for graphs.</p>
 <p>Terminology: <em>Head:</em> the first node. <em>Tail:</em> the last node. <em>Pointer:</em> reference to another node. <em>Node:</em> An object containing data and pointer(s).</p>
 <p>Singly vs Doubly Linked Lists: <b>Singly linked lists</b> only hold a reference to the next node while <b>doubly linked lists</b> hold a reference to the next and the previous nodes.</p>
@@ -162,7 +175,9 @@ This repository is under construction. I am simply using it for note-taking purp
   </tr>
 </table>
 
-<h3>Stacks</h3>
+---
+
+<h3>III. Stacks</h3>
 <p>A <b>stack</b> is a one-ended linear data structure which models a real world stack by having two primary operations(i.e. push and pop). Elements in a stack always get removed and added to the top of the pile (LIFO - Last in, first out). It's critical to understand that you ONLY have access to the first element of a stack. Some examples of their usage include but are not limited to: undo mechanisms in text editors, matching brackets and braces in compilers, model a pile of books or plates, support recursion by keeping track of previous function calls, do a depth first search on a graph ... </p>
 
 
@@ -190,7 +205,9 @@ This repository is under construction. I am simply using it for note-taking purp
   </tr>
 </table>
 
-<h3>Queues</h3>
+---
+
+<h3>IV. Queues</h3>
 <p>A <b>queue></b> is a linear data structure which models real-world queues by having 2 primary operations (i.e. enqueue and dequeue). Everu queue has a front and a back. We insert elements through the back (enqueuing a.k.a adding or offering) and remove them through the front (dequeuing a.k.a polling). Some examples of their usage include but are not limited to: waiting lines, keep track of the x most recently added elements, web server request management (first come first served), breadth first search graph traversal ... </p>
 
 <p><b>Queues Complexity</b></p>
