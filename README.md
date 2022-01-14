@@ -367,12 +367,36 @@
 ---
 
 <h3>VII. Binary Trees and Binary Search Trees</h3>
-<p>Among the long list of tree DS, you have binary trees and binary search trees.</p>
+
 <ul><b>Definition:</b> A tree is an undirected graph which satisfies any of the following definitions: 
-  <li>An acyclic connected graph</li>
+  <li>An acyclic connected graph (acyclic = has no cycles).</li>
   <li>A connected graph with N nodes and N-1 edges.</li>
   <li>A graph in which any two verticles are connected by exactly one path.</li>
 </ul>
+<p>If we have a <b>rooted tree</b> then we'll want to have a reference to the root node of our tree. Which node is selected doesn't matter because any node can root the tree. A <b>child</b> is a node that extends from another node. A <b>parent</b> is the inverse of this. A <b>leaf node</b> is a node with no children. A <b>subtree</b> is a tree entirely contained within another. </p>
+
+<p>Among the long list of tree DS, you have binary trees and binary search trees. A <b>binary tree </b>is a tree for which every node has at most 2 children. A <b>binary search tree </b>is a binary tree that satisfies the <b>BST invarient:</b> the left subtree has elements smaller than the value of the current node and the right subtree has elements larger than the value of the current node. <b>And this would depend on if you allow for duplicate values or not (usually we're only interested in unique elements inside our tree).</b> Some examples of BT and BST usage include but are not limited to: implementation of some map and set ADTs, red black trees, AVL trees, Splay trees, binary heaps, syntax trees, treap ...</p>
+
+<p><b>BST Complexity</b></p>
+<table>
+  <tr>
+    <td>Insert</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Delete</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Remove</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Search</td>
+    <td>O(n)</td>
+  </tr>
+</table>
+
 ---
 
 <h1>Algorithms</h1>
