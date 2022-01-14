@@ -330,6 +330,8 @@
     <p>If we have many indices with the same value and need to remove an instance of that value, which one is removed does not matter as long as the heap-invarient property is satisfied. </p></li>
 </ul>
 
+---
+
 <h3>VI. Union Find</h3>
 <p><b>Definition:</b> Union Find is a DS that keeps track of elements which are split into 1+ disjoint sets. It has two primary operations: <b>find</b> and <b>union</b>. 'Find' will tell you what group an element belongs to, and 'Union' merges two groups together. Some examples of Union Find usage include but are not limited to: Kruskal's minimum spanning tree algorithm, grid percolation, network connectivity, least common ancestor in trees, image processing...</p>
 <p><b>Union Find Complexity</b></p>
@@ -362,7 +364,15 @@
 <em>Note: α(n) = amortized constant time (almost constant time but not quite)</em> </br>
 <p>One way to optimize the Union Find DS is with <b>path compression</b>. Path compression allows you to find out what the root node of a component is since all children point to the root node (so you don't need to traverse a sequence of nodes).</p>
 
+---
 
+<h3>VII. Binary Trees and Binary Search Trees</h3>
+<p>Among the long list of tree DS, you have binary trees and binary search trees.</p>
+<ul><b>Definition:</b> A tree is an undirected graph which satisfies any of the following definitions: 
+  <li>An acyclic connected graph</li>
+  <li>A connected graph with N nodes and N-1 edges.</li>
+  <li>A graph in which any two verticles are connected by exactly one path.</li>
+</ul>
 ---
 
 <h1>Algorithms</h1>
