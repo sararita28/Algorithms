@@ -296,7 +296,7 @@
   <li>etc...</li>
 </ul>
 
-<ul><h4>Adding Elements to a Binary Heap</h4>
+<h4>Adding Elements to a Binary Heap</h4>
 <p>A <b>binary heap</b> is a binary tree that supports the heap invariant. In a binary heap, every node has <em>exactly two children.</em></p>
 <p>A <b>complete binary tree</b> is a tree in which every level (except possibly the last) is completely filled and all the nodes are as far left as possible (so it starts inserting from left to right).</p>
 <p><b>Binary Heap Representation: </b>You can use different ways to represent a binary heap (such as objects and pointers, arrays...) but using arrays is probably the most convenient way to do so.If you're using arrays; say the parent child's index is represented by i. The left child index and right child index would be, respectively, 2i+1 and 2i+2 (0-based).</p>
@@ -319,7 +319,6 @@
  </tr>  
 </table>
 
-</ul>
 
 <h4>Removing Elements from a Binary Heap</h4>
 <h5>Naive Removing</h5>
