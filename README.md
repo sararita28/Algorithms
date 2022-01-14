@@ -296,13 +296,13 @@
   <li>etc...</li>
 </ul>
 
-<h4>Adding Elements to a Binary Heap</h4>
+<ul><h4>Adding Elements to a Binary Heap</h4>
 <p>A <b>binary heap</b> is a binary tree that supports the heap invariant. In a binary heap, every node has <em>exactly two children.</em></p>
 <p>A <b>complete binary tree</b> is a tree in which every level (except possibly the last) is completely filled and all the nodes are as far left as possible (so it starts inserting from left to right).</p>
 <p><b>Binary Heap Representation: </b>You can use different ways to represent a binary heap (such as objects and pointers, arrays...) but using arrays is probably the most convenient way to do so.If you're using arrays; say the parent child's index is represented by i. The left child index and right child index would be, respectively, 2i+1 and 2i+2 (0-based).</p>
-<h5>Naive Adding</h5>
+  <li><h5>Naive Adding</h5></li>
 <p>To add elements to a binary Heap you use what's called <b>bubbling up (a.k.a swimming/swifting up).</b> So basically, you insert your element at the bottom of the tree and swap it with higher elements till you're no longer in violation of the heap property.</p>
-<h5>Adding with a Hash Table</h5>
+  <li><h5>Adding with a Hash Table</h5></li>
 <p>Using a hash table is a more efficient way of adding/removing elements from a binary heap. It allows every node to be mapped to the index it's found at and provides a constant time lookup. If there are 2+ nodes with the same value it will map the value to all the value's positions (indices) by maintaing a set/tree set.</p>
 <table>
  <tr>
@@ -313,7 +313,13 @@
    <td> </th>
    <td> </th>
  </tr>  
+  <tr>
+   <td> </th>
+   <td> </th>
+ </tr>  
 </table>
+
+</ul>
 
 <h4>Removing Elements from a Binary Heap</h4>
 <h5>Naive Removing</h5>
