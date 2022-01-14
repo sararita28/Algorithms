@@ -238,8 +238,13 @@
   </tr>
 </table>
 
+---
+<h3>V. Heaps</h3>
 
-
+<h4>Priority Queues</h4>
+<p>A <b>priority queue</b> is an ADT that operates similar to a regular queue except that <em>each element has a certain priority</em>. The priority of the elements determine the order in which the elements are removed from the priority queue. Priority queue only support elements that are comparable (meaning the data in PQ must be able to be ordered in some way in order to assign relative priorities to each element). so how does the priority queue know which is the next highest-priority element? It uses a <b>heap.</b></p>
+<p>A <b>heap></b> is a <b>tree-based</b> DS that satisfies the heap invarient (a.k.a heap property). If A is a parent node of B then A is ordered with respect to B for all nodes A and B in the heap. Basically, the value of the parent node is always greater than or equal to the value of the child node for all nodes (in case of a max heap) or the opposite (in case of a min heap).</p>
+<p>Some examples of PQ's usage include but are not limited to: implementation of Dijkstra's Shortest path algorithm, dynamically fetching the 'next best' or 'next worst' element, Huffman coding for lossless data compression, best first search algorithms such as A*, Minimum Spanning tree algorithms...</p>
 
 <h1>Algorithms</h1>
 <h3>Binary Search</h3>
