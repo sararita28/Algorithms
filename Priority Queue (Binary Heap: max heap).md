@@ -3,7 +3,7 @@
 var H = Array(50).fill(0);
 var size = -1;
  
-// Function to return the index of the parent node of a given node
+// Function to return the index of the parent node of a given node </br>
 function parent(i){
 
     return parseInt((i - 1) / 2);
