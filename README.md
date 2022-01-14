@@ -300,10 +300,28 @@
 <p>A <b>binary heap</b> is a binary tree that supports the heap invariant. In a binary heap, every node has <em>exactly two children.</em></p>
 <p>A <b>complete binary tree</b> is a tree in which every level (except possibly the last) is completely filled and all the nodes are as far left as possible (so it starts inserting from left to right).</p>
 <p><b>Binary Heap Representation: </b>You can use different ways to represent a binary heap (such as objects and pointers, arrays...) but using arrays is probably the most convenient way to do so.If you're using arrays; say the parent child's index is represented by i. The left child index and right child index would be, respectively, 2i+1 and 2i+2 (0-based).</p>
+<h5>Naive Adding</h5>
 <p>To add elements to a binary Heap you use what's called <b>bubbling up (a.k.a swimming/swifting up).</b> So basically, you insert your element at the bottom of the tree and swap it with higher elements till you're no longer in violation of the heap property.</p>
+<h5>Adding with a Hash Table</h5>
+<p>Using a hash table is a more efficient way of adding/removing elements from a binary heap. It allows every node to be mapped to the index it's found at and provides a constant time lookup. If there are 2+ nodes with the same value it will map the value to all the value's positions (indices) by maintaing a set/tree set.</p>
+<table>
+ <tr>
+   <th>Node Value (Key)</th>
+   <th>Positions(s) (Value)</th>
+ </tr>
+ <tr>
+   <td> </th>
+   <td> </th>
+ </tr>  
+</table>
 
 <h4>Removing Elements from a Binary Heap</h4>
+<h5>Naive Removing</h5>
 <p>In general with heaps we always want to remove the root value (because it's the node of interest, with the highest priority). Removing the root is called <b>polling.</b> If you're using an array to represent your tree, your root will always be at index 0. When you're polling the root you'll want to replace it with another element (usually the last element of the array). So you swap them, you get rid of the element in question and you now need to move the new root in order to satisfy the heap-invarient property so you start <b>bubbling down</b> by comparing the root's children and swapping with the smallest (for Min Heaps). If they're equal you swap with the left-most element by default. If you want to remove another element other than the root, you start by selecting the root and do a linear search/scan till you find the element in question. Once you've marked it as the element to be removed you swap it with the last node of the tree and adjust till you satisfy the heap-invarient property. </p>
+<h5>Removing with a Hash Table</h5>
+
+
+<h3>VI. Hash Tables</h3>
 
 
 ---
