@@ -243,7 +243,7 @@
 <h3>V. Heaps</h3>
 
 <h4>Priority Queues</h4>
-<p>A <b>priority queue</b> is an ADT that operates similar to a regular queue except that <em>each element has a certain priority</em>. The priority of the elements determine the order in which the elements are removed from the priority queue. Priority queue only support elements that are comparable (meaning the data in PQ must be able to be ordered in some way in order to assign relative priorities to each element). so how does the priority queue know which is the next highest-priority element? It uses a <b>heap.</b></p>
+<p>A <b>priority queue</b> is an ADT that operates similar to a regular queue except that <em>each element has a certain priority</em>. The priority of the elements determine the order in which the elements are removed from the priority queue. Priority queue only support elements that are comparable (meaning the data in PQ must be able to be ordered in some way in order to assign relative priorities to each element). so how does the priority queue know which is the next highest-priority element? The best way to do that (time-complexity-wise) is by using a <b>heap.</b></p>
 <p>A <b>heap></b> is a <b>tree-based</b> DS that satisfies the heap invarient (a.k.a heap property). If A is a parent node of B then A is ordered with respect to B for all nodes A and B in the heap. Basically, the value of the parent node is always greater than or equal to the value of the child node for all nodes (in case of a max heap) or the opposite (in case of a min heap).</p>
 <p>Some examples of PQ's usage include but are not limited to: implementation of Dijkstra's Shortest path algorithm, dynamically fetching the 'next best' or 'next worst' element, Huffman coding for lossless data compression, best first search algorithms such as A*, Minimum Spanning tree algorithms...</p>
 
@@ -265,11 +265,40 @@
     <td>Adding</td>
     <td>O(logn)</td>
   </tr>
+  <tr>
+    <td>Naive Removing</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Advanced removing with hash table</td>
+    <td>O(logn)</td>
+  </tr>
+  <tr>
+    <td>Naive contains</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Contains check with hash table</td>
+    <td>O(1)</td>
+  </tr>
 </table>
 
+<h4>Turning Min PQ into Max PQ</h4>
+<p>Since elements in PQ are comparable they implement some sort of <em>comparable interface</em> which we can <em>negate/invert</em> to achieve a Max heap.</p>
 
+<ul> Types of Heaps
+  <li>Binary Heap</li>
+  <li>Fibonacci Heap</li>
+  <li>Binomial Heap</li>
+  <li>Pairing Heap</li>
+...
+</ul>
 
+<h4>Adding Elements to a Binary Heap</h4>
+<p></p>
 
+<h4>Other Implementations of PQ</h4>
+>p>Heaps are usually the best implementation of PQ in terms of time complexity, however, PQs can also be implemented using other DS.</p>
 
 
 ---
