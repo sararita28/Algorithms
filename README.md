@@ -359,7 +359,10 @@
     <td>O(1)</td>
   </tr>
 </table>
-<em>Note: α(n) = amortized constant time</em>
+<em>Note: α(n) = amortized constant time (almost constant time but not quite)</em> </br>
+<p>One way to optimize the Union Find DS is with <b>path compression</b>. Path compression allows you to find out what the root node of a component is since all children point to the root node (so you don't need to traverse a sequence of nodes).</p>
+
+
 ---
 
 <h1>Algorithms</h1>
