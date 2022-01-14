@@ -244,6 +244,8 @@
 
 <h4>Priority Queues</h4>
 <p>A <b>priority queue</b> is an ADT that operates similar to a regular queue except that <em>each element has a certain priority</em>. The priority of the elements determine the order in which the elements are removed from the priority queue. Priority queue only support elements that are comparable (meaning the data in PQ must be able to be ordered in some way in order to assign relative priorities to each element). so how does the priority queue know which is the next highest-priority element? The best way to do that (time-complexity-wise) is by using a <b>heap.</b></p>
+<p> <u>Note:</u> Heaps are usually the best implementation of PQ in terms of time complexity, however, PQs can also be implemented using other DS.</p>
+
 <p>A <b>heap></b> is a <b>tree-based</b> DS that satisfies the heap invarient (a.k.a heap property). If A is a parent node of B then A is ordered with respect to B for all nodes A and B in the heap. Basically, the value of the parent node is always greater than or equal to the value of the child node for all nodes (in case of a max heap) or the opposite (in case of a min heap).</p>
 <p>Some examples of PQ's usage include but are not limited to: implementation of Dijkstra's Shortest path algorithm, dynamically fetching the 'next best' or 'next worst' element, Huffman coding for lossless data compression, best first search algorithms such as A*, Minimum Spanning tree algorithms...</p>
 
@@ -291,14 +293,17 @@
   <li>Fibonacci Heap</li>
   <li>Binomial Heap</li>
   <li>Pairing Heap</li>
-...
+  <li>etc...</li>
 </ul>
 
 <h4>Adding Elements to a Binary Heap</h4>
-<p></p>
+<p>A <b>binary heap</b> is a binary tree that supports the heap invariant. In a binary heap, every node has <em>exactly two children.</em></p>
+<p>A <b>complete binary tree</b> is a tree in which every level (except possibly the last) is completely filled and all the nodes are as far left as possible (so it starts inserting from left to right).</p>
+<p><b>Binary Heap Representation: </b>You can use different ways to represent a binary heap (such as objects and pointers, arrays...) but using arrays is probably the most convenient way to do so.If you're using arrays; say the parent child's index is represented by i. The left child index and right child index would be, respectively, 2i+1 and 2i+2 (0-based).</p>
+<p>To add elements to a binary Heap you use what's called <b>bubbling up (a.k.a swimming/swifting up).</b> So basically, you insert your element at the bottom of the tree and swap it with higher elements till you're no longer in violation of the heap property.</p>
 
-<h4>Other Implementations of PQ</h4>
->p>Heaps are usually the best implementation of PQ in terms of time complexity, however, PQs can also be implemented using other DS.</p>
+<h4>Removing Elements from a Binary Heap</h4>
+<p>In general with heaps we always want to remove the root value (because it's the node of interest, with the highest priority). Removing the root is called <b>polling.</b> If you're using an array to represent your tree, your root will always be at index 0. When you're polling the root you'll want to replace it with another element (usually the last element of the array). So you swap them, you get rid of the element in question and you now need to move the new root in order to satisfy the heap-invarient property so you start <b>bubbling down</b> by comparing the root's children and swapping with the smallest (for Min Heaps). If they're equal you swap with the left-most element by default. If you want to remove another element other than the root, you start by selecting the root and do a linear search/scan till you find the element in question. Once you've marked it as the element to be removed you swap it with the last node of the tree and adjust till you satisfy the heap-invarient property. </p>
 
 
 ---
