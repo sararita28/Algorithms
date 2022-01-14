@@ -305,7 +305,6 @@
     <p>To add elements to a binary Heap you use what's called <b>bubbling up (a.k.a swimming/swifting up).</b> So basically, you insert your element at the bottom of the tree and swap it with higher elements till you're no longer in violation of the heap property.</p></li>
   <li><h5>Adding with a Hash Table</h5>
     <p>Using a hash table is a more efficient way of adding/removing elements from a binary heap. It allows every node to be mapped to the index it's found at and provides a constant time lookup. If there are 2+ nodes with the same value it will map the value to all the value's positions (indices) by maintaing a set/tree set.</p></li>
-  </ul>
 <table>
  <tr>
    <th>Node Value (Key)</th>
@@ -320,6 +319,7 @@
    <td> </th>
  </tr>  
 </table>
+  </ul>
 
 
 <h4>Removing Elements from a Binary Heap</h4>
@@ -330,9 +330,36 @@
     <p>If we have many indices with the same value and need to remove an instance of that value, which one is removed does not matter as long as the heap-invarient property is satisfied. </p></li>
 </ul>
 
-<h3>VI. Hash Tables</h3>
-
-
+<h3>VI. Union Find</h3>
+<p><b>Definition:</b> Union Find is a DS that keeps track of elements which are split into 1+ disjoint sets. It has two primary operations: <b>find</b> and <b>union</b>. 'Find' will tell you what group an element belongs to, and 'Union' merges two groups together. Some examples of Union Find usage include but are not limited to: Kruskal's minimum spanning tree algorithm, grid percolation, network connectivity, least common ancestor in trees, image processing...</p>
+<p><b>Union Find Complexity</b></p>
+<table>
+  <tr>
+    <td>Construction</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Union</td>
+    <td>α(n)</td>
+  </tr>
+  <tr>
+    <td>Find</td>
+    <td>α(n)</td>
+  </tr>
+  <tr>
+    <td>Get component size</td>
+    <td>α(n)</td>
+  </tr>
+  <tr>
+    <td>Check if connected</td>
+    <td>α(n)</td>
+  </tr>
+  <tr>
+    <td>Count components</td>
+    <td>O(1)</td>
+  </tr>
+</table>
+<em>Note: α(n) = amortized constant time</em>
 ---
 
 <h1>Algorithms</h1>
