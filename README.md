@@ -397,6 +397,13 @@
   </tr>
 </table>
 
+<ul><h4>Tree Traversals (preorder, inorder, postorder, level order)</h4>
+  <li>Preorder: prints the value of a node <b>before</b> the recursive calls</li>
+  <li>Inorder: prints the value of a node <b>between</b> the recursive calls. Doing so will also print the element values in a sorted, ascending order.</li>
+  <li>Postorder: prints the value of a node <b>after</b> the recursive call</li>
+  <li>Level order: prints the value of a node as it appears, one level at a time (so left and right subtrees altogether). It does that by using a breadth-first search from the root to the leafs. To do so, you need to maintain a queue of the nodes left to explore.</li>
+</ul>
+
 ---
 
 <h1>Algorithms</h1>
