@@ -1,5 +1,5 @@
 
-var H = Array(50).fill(0);  </br>
+var H = Array(50).fill(0);  
 var size = -1;
  
 //Function to return the index of the parent node of a given node:
