@@ -404,6 +404,8 @@
   <li>Level order: prints the value of a node <b>as it appears</b>, one level at a time (so left and right subtrees altogether). It does that by using a breadth-first search from the root to the leafs. To do so, you need to maintain a queue of the nodes left to explore.</li>
 </ul>
 
+---
+
 <h3>VIII. Hash Table</h3>
 <p>A <b>hash table (HT)</b> is a DS that provides a mapping from keys to values using a technique called <b>hashing</b>. All of the keys have to be unique, but values don't. HTs are often used to track item frequencies. Key-value pairs can be of any type, but the keys need to be <em>hashable</em>. A <b>hash function</b> is a function that maps a key 'x' to a whole number in a fixed range. We can also define hash functions for arbitrary objects (such as strings, lists, tuples ...)</p>
 <ul><h4>Properties of Hash functions:</h4>
@@ -421,6 +423,35 @@
   <li><b>Separate chaining</b>: deals with hash collisions by maintaining a DS (usually a linked list) to hold all the different values which hashed to a particular value <b>(basically, you have multiple auxiliary DS)</b>.</li> 
   <li><b>Open addressing</b>: deals with hash collisions by finding another place within the hash table for the object to go by offsetting it from the position to which it hashed to <b>(basically, everything is kept within one big array)</b>.</li>
 </ul>
+
+<p><b>Hash Table Complexity</b></p>
+<table>
+  <tr>
+    <th>Operation</th>
+    <th>If it's a good uniform hash function</th>
+    <th>Worst</th>
+  </tr>
+  <tr>
+    <td>Insertion</td>
+    <td>O(1)</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Removal</td>
+    <td>O(1)</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Search</td>
+    <td>O(1)</td>
+    <td>O(n)</td>
+  </tr>
+</table>
+
+<h4>Hash Table & Separate Chaining</h4>
+<p><b>Separate chaining</b> is one of many strategies to deal with hash collisions by maintaining an auxiliary DS (usually linked list) to hold all the different values which hashed to a particular value. Once the HT is full you should create a new one with a larger capacity and rehash all the items inside the old HT and disperse them throughout the new HT at different locations. </p>
+
+---
 
 ---
 
