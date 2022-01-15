@@ -1,4 +1,4 @@
-### Implementation of linked lists
+// Implementation of linked lists
 
 class Node { 
 
@@ -6,7 +6,7 @@ class Node {
         this.element = element;
         this.next = null
     }
-} </br>
+} 
 class LinkedList {
     
     constructor() {
