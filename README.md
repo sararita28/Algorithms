@@ -451,6 +451,18 @@
 <h4>Hash Table & Separate Chaining</h4>
 <p><b>Separate chaining</b> is one of many strategies to deal with hash collisions by maintaining an auxiliary DS (usually linked list) to hold all the different values which hashed to a particular value. Once the HT is full you should create a new one with a larger capacity and rehash all the items inside the old HT and disperse them throughout the new HT at different locations. </p>
 
+<h4>Hash Table & Open Addressing</h4>
+<p>When using open addressing as a collision-resolution technique, the key-value pairs are stores in the table/array itself (as opposed to using an auxiliary DS). This means that we need to care a great deal about the size of the hash table and how many elements are currently in the table so you need to keep track of the load factor.</p>
+<p>Load factor = items in table / size of table</p>
+<p>Constant time (O(1)) assumes the load factor α is kept below a certain fixed value/treshold meaning that once it gets above it we need to grow the table size (ideally exponentially).</p>
+<p>If you try inserting a key/value pair into the table but it's occupied, you try offsetting the current position subject to a probing sequence P(x) till you find an unoccupied slot.</p>
+<ul><p>There's an infinite amount of probing sequences to choose from. Some of them include: </p>
+  <li>Linear probing: P(x) = ax + b where a,b are constants.</li>
+  <li>Quadratic probing: P(x) = ax^2 + bx + c where a,b,c are constants.</li>
+  <li>Double hashing: P(k,x) = x*H2(k) where H2(k) is a secondary hash function.</li>
+  <li>Pseudo random number generator: P(k,x) = x*RNG(H(k),x) where RNG is a random number generator function seeded with H(k).</li>
+</ul>
+
 ---
 
 ---
