@@ -1,20 +1,17 @@
 class Node {
 
   constructor(data) {
-  
     this.data = data;
     this.left = null;
     this.right = null;
   }
-} </br>
+} 
 
   class BinarySearchTree {
-  
     constructor() {
-
       this.root = null;
     }
-      ----------------------- Inserting a Node -----------------------
+//      ----------------------- Inserting a Node -----------------------
       
       // helper method to create a new node with a value data to be inserted and calls insertNode
       insert(data) {
@@ -56,7 +53,7 @@ class Node {
       
       }
       
-            ----------------------- Removing a Node -----------------------
+ //           ----------------------- Removing a Node -----------------------
       remove(data) {
          
          //root is re-initialized with root of a modified tree
@@ -108,7 +105,7 @@ class Node {
           return node;
         }
       }
-            ----------------------- Perform inorder traversal -----------------------
+//            ----------------------- Perform inorder traversal -----------------------
       inorder(node){
       
         if (node !== null) {
@@ -118,7 +115,7 @@ class Node {
           this.inorder(node.right);
         }
       }
-            ----------------------- Perform preorder traversal -----------------------
+//            ----------------------- Perform preorder traversal -----------------------
       preorder(node){
         
         if (node !== null) {
@@ -128,7 +125,7 @@ class Node {
           this.preorder(node.right);
         }
       }
-            ----------------------- Perform postorder traversal -----------------------
+//            ----------------------- Perform postorder traversal -----------------------
       postorder(node){
       
         if (node !== null) {
@@ -139,7 +136,7 @@ class Node {
         }
       }
       
-            ----------------------- Finds minimum node -----------------------
+//            ----------------------- Finds minimum node -----------------------
       findMinNode(node){
       
     // if left of a node is null then it must be minimum node
@@ -148,13 +145,13 @@ class Node {
     } else {
         return this.findMinNode(node.left);
     }     
-            ----------------------- Returns root node -----------------------
+//            ----------------------- Returns root node -----------------------
     getRootNode(){
     
     return this.root;
     }
 
-            ----------------------- Search for node with given data -----------------------
+//            ----------------------- Search for node with given data -----------------------
     search(node, data){
     
      // if tree is empty return null
