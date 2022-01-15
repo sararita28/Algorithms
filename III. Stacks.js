@@ -1,4 +1,3 @@
-### Implementation of Stacks
 
 class Stack {
 
