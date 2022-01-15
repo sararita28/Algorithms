@@ -1,7 +1,5 @@
-### Implementation of Queues
 
 class Queue {
-
     constructor() {
         this.items = [];
     }
