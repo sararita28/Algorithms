@@ -1,35 +1,29 @@
-<em>code source: Geeksforgeeks </em>
 
 var H = Array(50).fill(0);  </br>
 var size = -1;
  
-<b> Function to return the index of the parent node of a given node: </b></br>
+//Function to return the index of the parent node of a given node:
 
 function parent(i){
-
     return parseInt((i - 1) / 2);
 }
  
-<b>  Function to return the index of the left child of the given node </b></br>
-
+//Function to return the index of the left child of the given node
 
 function leftChild(i){
-
     return parseInt((2 * i) + 1);
 }
  
-<b>  Function to return the index of the right child of the given node </b></br>
+//Function to return the index of the right child of the given node
 
 
 function rightChild(i){
-
     return parseInt((2 * i) + 2);
 }
  
-<b>  Function to shift up the node in order to maintain the heap property </b></br>
+//Function to shift up the node in order to maintain the heap property
 
 function shiftUp(i) {
-
     while (i > 0 && H[parent(i)] < H[i]) {
         // Swap parent and current node
         swap(parent(i), i);
@@ -40,16 +34,13 @@ function shiftUp(i) {
 }
  
 function swap(i, j){
-
     var temp = H[i];
     H[i] = H[j];
     H[j] = temp;
 }
  
-<b>  Function to shift down the node in order to maintain the heap property </b></br>
-
+//Function to shift down the node in order to maintain the heap property 
 function shiftDown( i){
-
     var maxIndex = i;
  
     // Left Child
@@ -73,10 +64,9 @@ function shiftDown( i){
     }
 }
  
-<b>  Function to insert a new element in the Binary Heap </b></br>
+//Function to insert a new element in the Binary Heap
 
 function insert(p){
-
     size = size + 1;
     H[size] = p;
  
@@ -84,10 +74,9 @@ function insert(p){
     shiftUp(size);
 }
  
-<b>  Function to extract the element with maximum priority </b></br>
+//Function to extract the element with maximum priority
 
 function extractMax(){
-
     var result = H[0];
  
     // Replace the value at the root with the last leaf
@@ -99,10 +88,9 @@ function extractMax(){
     return result;
 }
  
-<b>  Function to change the priority of an element </b> </br>
+//Function to change the priority of an element
 
 function changePriority(i, p){
-
     var oldp = H[i];
     H[i] = p;
  
@@ -114,17 +102,15 @@ function changePriority(i, p){
     }
 }
  
-<b>  Function to get value of the current maximum element </b> </br>
+//Function to get value of the current maximum element
 
 function getMax(){
-
     return H[0];
 }
  
-<b>  Function to remove the element located at given index </b></br>
+//Function to remove the element located at given index
 
 function remove(i){
-
     H[i] = getMax() + 1;
  
     // Shift the node to the root
@@ -135,5 +121,9 @@ function remove(i){
     extractMax();
 }
  
-Time Complexity: The time complexity of all the operations is O(logn) except for GetMax() which has time complexity of O(1). 
+/*Time Complexity: The time complexity of all the operations is O(logn) except for GetMax() which has time complexity of O(1). 
 Auxiliary Space: O(N)
+
+
+code source: Geeksforgeeks
+*/
