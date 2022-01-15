@@ -462,7 +462,13 @@
   <li>Double hashing: P(k,x) = x*H2(k) where H2(k) is a secondary hash function.</li>
   <li>Pseudo random number generator: P(k,x) = x*RNG(H(k),x) where RNG is a random number generator function seeded with H(k).</li>
 </ul>
+<p>Note: Most randomly selected probing sequences modulo N will produce a cycle <em>shorter than the table size</em> which will cause an infinite loop.</p>
+<p>The way to fix that and handle probing functions which produce cycles shorter than the table size is to avoid such functions altogehther and only use probing functions that produce a cycle exactly the length of your table elements (with a few exceptions).</p>
 
+<h4>Hash Tables & Linear Probing</h4>
+<p><b>Linear Probing</b> is a probing method which probes according to a linear formula, specifically: P(x)=ax+b where a≠= and a,b are constants.</p>
+<p><b>Q:</b> Which value(s) of the constant a in P(x) = ax produce a full cycle modulo N?</p>
+<p><b>A:</b> A value when a and N are <b>relatively prime</b> meaning that a and N's Greatest common denominator(GCD) is 1. So, when GCD(a,N)=1 the probing function P(x) is able to generate a complete cycle and you'll always be able to find an empty bucket.</p>
 ---
 
 ---
