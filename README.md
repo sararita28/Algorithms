@@ -401,8 +401,18 @@
   <li>Preorder: prints the value of a node <b>before</b> the recursive calls</li>
   <li>Inorder: prints the value of a node <b>between</b> the recursive calls. Doing so will also print the element values in a sorted, ascending order.</li>
   <li>Postorder: prints the value of a node <b>after</b> the recursive call</li>
-  <li>Level order: prints the value of a node as it appears, one level at a time (so left and right subtrees altogether). It does that by using a breadth-first search from the root to the leafs. To do so, you need to maintain a queue of the nodes left to explore.</li>
+  <li>Level order: prints the value of a node <b>as it appears</b>, one level at a time (so left and right subtrees altogether). It does that by using a breadth-first search from the root to the leafs. To do so, you need to maintain a queue of the nodes left to explore.</li>
 </ul>
+
+<h3>VIII. Hash Table</h3>
+<p>A <b>hash table (HT)</b> is a DS that provides a mapping from keys to values using a technique called <b>hashing</b>. All of the keys have to be unique, but values don't. HTs are often used to track item frequencies. Key-value pairs can be of any type, but the keys need to be <em>hashable</em>. A <b>hash function</b> is a function that maps a key 'x' to a whole number in a fixed range. We can also define hash functions for arbitrary objects (such as strings, lists, tuples ...)</p>
+<ul><h4>Properties of Hash functions:</h4>
+  <li>- If H(x)=H(y) then objects x and y <b>might be equal</b>, but if H(x)≠H(y) then x and y are <b>certainly not equal</b>. This means that instead of comparing x and y directly, a smarter approach is to first compare their hash values (and only if the hash values match do we then compare them directly).</li>
+  <li>- A hash function must be <b>deterministic</b>. Meaning that if H(x) = y then H(x) must always produce y and never another value.</li>
+  <li>- We try very hard to make them <b>uniform</b> to minimize the number of hash collisions. A hash collision is when 2 objects x,y hash to the same value (i.e. H(x)=H(y)).</li>
+</ul>
+<h4>What makes a key "hashable"?</h4>
+<p>We say that a key of type T is hashable if it is immutable and we have a hash function H(k) defined for all keys k of type T.</p>
 
 ---
 
