@@ -414,6 +414,14 @@
 <h4>What makes a key "hashable"?</h4>
 <p>We say that a key of type T is hashable if it is immutable and we have a hash function H(k) defined for all keys k of type T.</p>
 
+<h4>How does a hash table work?</h4>
+<p>A hash table is just a fancy word for an 'array'. You can have a very fast insertion, lookup and remova of O(1) time using a hash function as a way to index into a hash table. However, the constant time behavior attributed to hash tables is only true if you have a good <b>uniform hash function.</b></p>
+<h4>How do we handle collisions?</h4>
+<ul><p>There are many hash collision resolution techniques. The 2 most popular being: <p>
+  <li><b>Separate chaining</b>: deals with hash collisions by maintaining a DS (usually a linked list) to hold all the different values which hashed to a particular value <b>(basically, you have multiple auxiliary DS)</b>.</li> 
+  <li><b>Open addressing</b>: deals with hash collisions by finding another place within the hash table for the object to go by offsetting it from the position to which it hashed to <b>(basically, everything is kept within one big array)</b>.</li>
+</ul>
+
 ---
 
 <h1>Algorithms</h1>
