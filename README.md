@@ -523,7 +523,7 @@
   </tr>
 </table>
 
-<p>Unlike a regular array, in a Fenwick Tree, a specific cell is responsible for other cells as well. The position of the <b>least significant bit (LSB)</B> determines the <b>range of the responsibility</b> that cell has to the cells below itself. You can determine that by checking the index's number in binary. In a Fenwick tree we may compute the <b>prefix sum</b> up to a certain index, which ultimately lets us perform range sum queries. With range queries, you cascade down from the current index by <b>continuously removing the LSB</b> till 0.</p>
+<p>Unlike a regular array, in a Fenwick Tree, a specific cell is responsible for other cells as well. The position of the <b>least significant bit (LSB)</b> determines the <b>range of the responsibility</b> that cell has to the cells below itself. You can determine that by checking the index's number in binary. In a Fenwick tree we may compute the <b>prefix sum</b> up to a certain index, which ultimately lets us perform range sum queries. With range queries, you cascade down from the current index by <b>continuously removing the LSB</b> till 0.</p>
 
 <h4>Fenwick Tree & Point Update </h4>
 <p>Point update is the opposite of prefix sum/ range queries. Instead of removing the LSB, we add it.</p>
