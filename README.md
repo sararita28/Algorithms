@@ -578,6 +578,9 @@
 
 ---
 
+<h3> XI. Indexed Priority Queue</h3>
+<p>An <b>Indexed Priority Queue (IPQ)</b> is a traditional priority queue variant which on top of the regular PQ operations supports quick updates and deletions of key-value pairs. IPQ allows you to dynamically update the value/priority of certain keys. The first step to using an IPQ is to assign index values to all the keys forming a bidirectional mapping.</p>
+
 ---
 
 <h1>Algorithms</h1>
