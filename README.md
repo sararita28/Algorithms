@@ -485,7 +485,7 @@
 <p><b>Q: </b>Since DH reduces to linear probing at runtime, we may end up with a linear probing function in which case we have a cycle. How do we fix this?</p>
 <p><b>A: </b>You pick the table size to be a prime number and also compute the value of	δ. δ=H2(k) mod N. However, if δ=0 you are going to be stuck in a cycle so when this happens, set δ=1</p>
 <p><b>Q: </b>How do we construct our secondary hash function (H2(k))</p>
-<p><b>A: </b>There are many well known high quality hash functions for the fundamental data types that we can use and combine to construct the secondary hash function. Frequently, they're picked from a pool of hash functions called <b>universal hash functions</n>.</p>
+<p><b>A: </b>There are many well known high quality hash functions for the fundamental data types that we can use and combine to construct the secondary hash function. Frequently, they're picked from a pool of hash functions called <b>universal hash functions</b>.</p>
 
 <h4>Removing an element in a hash table using Open Addressing</h4>
 <p>When we remove an element we're going to place a unique <b>marker called a tombstone</b> (instead of null) to indicate that a (k,v) pair was in the bucket but has been removed. This will tell you, when searching for elements, that the bucket should be skipped. If you don't do that, then during a search, you will see that the bucket says 'null' and assume that the element you're looking for is simply not in the table.</p>
