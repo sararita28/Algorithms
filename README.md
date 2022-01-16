@@ -458,7 +458,7 @@
 <p>If you try inserting a key/value pair into the table but it's occupied, you try offsetting the current position subject to a probing sequence P(x) till you find an unoccupied slot.</p>
 <ul><p>There's an infinite amount of probing sequences to choose from. Some of them include: </p>
   <li>Linear probing: P(x) = ax + b where a,b are constants.</li>
-  <li>Quadratic probing: P(x) = ax^2 + bx + c where a,b,c are constants.</li>
+  <li>Quadratic probing: P(x) = ax^2 + bx + c where a,b,c are constants and a≠0.</li>
   <li>Double hashing: P(k,x) = x*H2(k) where H2(k) is a secondary hash function.</li>
   <li>Pseudo random number generator: P(k,x) = x*RNG(H(k),x) where RNG is a random number generator function seeded with H(k).</li>
 </ul>
@@ -469,6 +469,16 @@
 <p><b>Linear Probing</b> is a probing method which probes according to a linear formula, specifically: P(x)=ax+b where a≠= and a,b are constants.</p>
 <p><b>Q:</b> Which value(s) of the constant a in P(x) = ax produce a full cycle modulo N?</p>
 <p><b>A:</b> A value when a and N are <b>relatively prime</b> meaning that a and N's Greatest common denominator(GCD) is 1. So, when GCD(a,N)=1 the probing function P(x) is able to generate a complete cycle and you'll always be able to find an empty bucket.</p>
+
+<h4>Hash Table & Quadratic Probing</h4>
+<p><b>Quadratic probing</b> is a probing method which probes according to a quadratic formula, specifically: P(x) = ax^2 + bx + c where a,b,c are constants and a≠0. Quadratic probing have the issue that they easily produce cycles, causing an infinite loop.</p>
+<p><b>Q: </b>How do we pick a probing function which always works?</p>
+<p><b>A: </b>3 of the most popular approaches are: </p>
+<ol>
+  <li>Let P(x) = x^2 , keep the table size a prime number > 3 and also keep α<= 1/2</li>
+  <li>Let P(x) = (x^2 + x)/2 and keep the table size a power of 2</li>
+  <li>Let P(x) = (-1^x)*x^2 and keep the table size a prime number N where N ≡ 3 mod 4</li>
+</ol>
 ---
 
 ---
