@@ -531,6 +531,20 @@
 
 ---
 
+<h3> X. Suffix Arrays</h3>
+<p>A <b>suffix</b> is a substring at the end of a string of characters. A <b>suffix array</b> is an array which contains all the <em>sorted</em> suffixes of a string. The suffix array provides a space efficient alternative to a <b>suffix tree</b> which itself is a compressed version of a <b>trie.</b> Suffix arrays can do everything suffix trees can, with some additional information such as a Longest Common Prefix (LCP) array.</p>
+
+<h4>The Longest Common Prefix (LCP) array</h4>
+<p>The LCP array is an array where each index tracks and stores how many characters 2 sorted adjacent suffixes have in common. </p>
+
+<h4>Using Suffix arrays & LCP arrays to find unique substrings</h4>
+<p>For every string, there are exactly n(n+1)/2 substrings</p>
+<p>The number of unique substrings in a string is: #of substrings - duplicates</p>
+
+
+
+---
+
 ---
 
 <h1>Algorithms</h1>
