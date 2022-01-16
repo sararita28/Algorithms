@@ -541,9 +541,30 @@
 <p>For every string, there are exactly n(n+1)/2 substrings</p>
 <p>The number of unique substrings in a string is: #of substrings - duplicates</p>
 
-
-
 ---
+
+<h3> XI. Balanced Binary Search Trees (BBST)</h3>
+<p>A <b>balanced binary Search tree</b> is a self-balancing binary search tree. It adjusts itself in order to maintain a low (logarithmic) height allowing for faster operations such as insertions and deletions.</p>
+
+<p><b>Binary Search Tree Complexity</b></p>
+<table>
+  <tr>
+    <td>Insert</td>
+    <td>O(logn)</td>
+  </tr>
+  <tr>
+    <td>Delete</td>
+    <td>O(logn)</td>
+  </tr>
+  <tr>
+    <td>Remove</td>
+    <td>O(logn)</td>
+  </tr>
+  <tr>
+    <td>Search</td>
+    <td>O(logn)</td>
+  </tr>
+</table>
 
 ---
 
