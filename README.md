@@ -404,6 +404,40 @@
   <li>Level order: prints the value of a node <b>as it appears</b>, one level at a time (so left and right subtrees altogether). It does that by using a breadth-first search from the root to the leafs. To do so, you need to maintain a queue of the nodes left to explore.</li>
 </ul>
 
+<h3> Balanced Binary Search Trees (BBST)</h3>
+<p>A <b>balanced binary Search tree</b> is a self-balancing binary search tree. It adjusts itself in order to maintain a low (logarithmic) height allowing for faster operations such as insertions and deletions.</p>
+
+<p><b>Binary Search Tree Complexity</b></p>
+<table>
+  <tr>
+    <td>Insert</td>
+    <td>O(logn)</td>
+  </tr>
+  <tr>
+    <td>Delete</td>
+    <td>O(logn)</td>
+  </tr>
+  <tr>
+    <td>Remove</td>
+    <td>O(logn)</td>
+  </tr>
+  <tr>
+    <td>Search</td>
+    <td>O(logn)</td>
+  </tr>
+</table>
+
+<p>Central to how nearly all BBST keep themselves balanced is the concept of <b>tree rotations</b>.</p>
+<p>The secret ingredient to most BBST algorithms is the clever use of 2 things: <b>a tree invarient</b and <b>tree rotations</b>.</p>
+<p>A tree invarient is a property/rule you impose on your tree that it must meet after every operation. To ensure that the invarient is always satisfied a series of tree rotations are normally applied. You can rotate/transform the values and nodes in a tree as you please as long as the BST invarient remaints satisfied (since BBSTs are BSTs).</p>
+<p>In some BBST implementations where you need to access the parent/uncle nodes it's convenient for nodes to also have a reference to the parent nodes, but this complicates tree rotations because you would have to update a lot more pointers</p>
+
+
+<h4>Inserting Elements into an AVL Tree</h4>
+<p>An <b>AVL tree</b> is one of many types of Balanced Binary Search Trees which allows for O(logn) insertion, deletion and search operations. Other types of BBST include: 2-3 tree, AA tree, scapegoat tree, red-black tree.</p>
+<p>The property which keeps an AVL tree balanced is called the <b>balanced factor (BF)</b>. BF(node)=H(node.right)-H(node.left) where H(x) is the height of node x (recall: H(x) is calculated as the number of edges between x and the furthest leaf). The requirement in the AVL which forces it to remain balanced is the requirement that the balance factor is always either -1, 0 or +1.</p>
+
+
 ---
 
 <h3>VIII. Hash Table</h3>
@@ -528,7 +562,6 @@
 <h4>Fenwick Tree & Point Update </h4>
 <p>Point update is the opposite of prefix sum/ range queries. Instead of removing the LSB, we add it.</p>
 
-
 ---
 
 <h3> X. Suffix Arrays</h3>
@@ -542,29 +575,6 @@
 <p>The number of unique substrings in a string is: #of substrings - duplicates</p>
 
 ---
-
-<h3> XI. Balanced Binary Search Trees (BBST)</h3>
-<p>A <b>balanced binary Search tree</b> is a self-balancing binary search tree. It adjusts itself in order to maintain a low (logarithmic) height allowing for faster operations such as insertions and deletions.</p>
-
-<p><b>Binary Search Tree Complexity</b></p>
-<table>
-  <tr>
-    <td>Insert</td>
-    <td>O(logn)</td>
-  </tr>
-  <tr>
-    <td>Delete</td>
-    <td>O(logn)</td>
-  </tr>
-  <tr>
-    <td>Remove</td>
-    <td>O(logn)</td>
-  </tr>
-  <tr>
-    <td>Search</td>
-    <td>O(logn)</td>
-  </tr>
-</table>
 
 ---
 
