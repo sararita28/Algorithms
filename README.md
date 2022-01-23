@@ -528,6 +528,8 @@
 <p><b>Q: </b>Then how do you deal with the issue of cluttering tombstones that are counted as filled slots and that increase the load factor?</p>
 <p><b>A: </b>Tombstones will be removed when the table is resized. Also, you can replace tombstones with (k,v) pairs during the insertion. Another optimization is called <b>lazy deletion/relocation</b>. Basically you replace the first tombstone you encounter with the value you did a lookup for then replace the old one with a null token. And next time you lookup the key, it'll be found much faster.</p>
 
+---
+
 <h3> IX. Fenwick Tree (a.k.a Binary Index Tree)</h3>
 <p><b>Fenwick Tree</b> is a DS that supports sum range queries as well as setting values in a static array and getting the value of the prefix sum up some index efficiently. </p>
 
