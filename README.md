@@ -485,7 +485,7 @@
 </table>
 
 <h4>Hash Table & Separate Chaining</h4>
-<p><b>Separate chaining</b> is one of many strategies to deal with hash collisions by maintaining an auxiliary DS (usually linked list) to hold all the different values which hashed to a particular value. Once the HT is full you should create a new one with a larger capacity and rehash all the items inside the old HT and disperse them throughout the new HT at different locations. </p>
+<p><b>Separate chaining</b> is one of many strategies to deal with hash collisions by maintaining an auxiliary DS (the most popular is a linked list, for a worst-case lookup runtime of O(n) which would only happen if the data is very strange and/or the hash function is very poor) to hold all the different values which hashed to a particular value. Once the HT is full you should create a new one with a larger capacity and rehash all the items inside the old HT and disperse them throughout the new HT at different locations. As long as the number of collisions is fairly small, chaining with linked lists is very efficient.</p>
 
 <h4>Hash Table & Open Addressing</h4>
 <p>When using open addressing as a collision-resolution technique, the key-value pairs are stores in the table/array itself (as opposed to using an auxiliary DS). This means that we need to care a great deal about the size of the hash table and how many elements are currently in the table so you need to keep track of the load factor.</p>
