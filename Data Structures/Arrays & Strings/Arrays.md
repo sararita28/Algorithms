@@ -70,27 +70,6 @@
   </tr>
 </table>
 
-
-<h4>Using Hash tables</h4>
-There are a number of ways of implementing a hash table. 
-<ul>
-  <li> Here's a simple and common one: We use an array of linked lists and a hash code function.
-<p>To insert a key:</p>
-<ol>
-  <li>Compute the key's hash code.</li>
-  <li>Map the hash code to an index in the array.</li>
-  <li>Store the key and value in the index (use a linked list  to avoid collisions).</li>
-</ol>
-<p>To retrieve a value pair by its key:</p>
-<ol>
-  <li>Same as above.</li>
-  <li>Same as above.</li>
-  <li>Search through the linked list for the key value pair.</li>
-</ol>
-</li>
-  <li>Alternatively to using an array of linked lists, you can use the hash table with a balanced binary search tree which gives O(logn) but uses less space.</li>
-</ul>
-
 <h3>Suffix Arrays</h3>
 <p>A <b>suffix</b> is a substring at the end of a string of characters. A <b>suffix array</b> is an array which contains all the <em>sorted</em> suffixes of a string. The suffix array provides a space efficient alternative to a <b>suffix tree</b> which itself is a compressed version of a <b>trie.</b> Suffix arrays can do everything suffix trees can, with some additional information such as a Longest Common Prefix (LCP) array.</p>
 
