@@ -1,4 +1,5 @@
 <h2>Arrays (Static and Dynamic)</h2>
+<img src="https://i.stack.imgur.com/UIwm1.png"/>
 <p><b>Static Arrays: </b>are fixed length containers containing n elements indexable from the range [0, n-1]. Static arrays are used a lot. Some examples of their usage include but are not limited to: storing and accessing sequential data, temporarily storing objects, used by IO routines and buffers, lookup tables and inverse lookup tables, return multiple values from a function, dynamic programming to cache answers to subproblems...</p>
 <p><b>Dynamic Arrays: </b>are arrays that either increase or decrease in size automatically.</p>
 <h4><em>Important note: JavaScript is not typed dependent so there is no static array. JavaScript directly allows arrays as dynamic only.</em></h4>
@@ -24,6 +25,51 @@
 </table>
 
 <p align="center"><i>Note: inserting and removing are in O(n) since, in order to add an element at the beginning/middle of an array, you also need to update the rest of the elements' indices.</i></p>
+
+<h3>Common Array Sorting Algorithms</h3>
+<table align="center">
+  <tr>
+    <th>Algorithm</th>
+    <th>Time Complexity</th>
+    <th>Space Complexity</th>
+  </tr>
+  <tr>
+    <td>Quicksort</td>
+    <td>O(n^2)</td>
+    <td>O(logn)</td>
+  </tr>
+  <tr>
+    <td>Mergesort</td>
+    <td>O(nlogn)</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Bubble sort</td>
+    <td>O(n^2)</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Insertion sort</td>
+    <td>O(n^2)</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Selection sort</td>
+    <td>O(n^2)</td>
+    <td>O(1)</td>
+  </tr>
+  <tr>
+    <td>Bucket sort</td>
+    <td>O(n^2)</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>Radix sort</td>
+    <td>O(nk)</td>
+    <td>O(n+k)</td>
+  </tr>
+</table>
+
 
 <h4>Using Hash tables</h4>
 There are a number of ways of implementing a hash table. 
