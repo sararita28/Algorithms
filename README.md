@@ -1,5 +1,8 @@
 🚧 This repository is under construction. I am simply using it for note-taking purposes (for now). Eventually, I would want to organize it better to benefit other people and help them in their learning and understanding of data structures and algorithms. The language used in this rep is <b>Javascript.</b>
 
+<h3>How to use this repository<h3>
+<p>Start with the 'README' file below then head over to the 'Data Structures' folder to learn more about each DS. Each DS should have its own file. Some DS also have Javascript files with their code implementation. Once you're done with that folder, go to the 'Algorithms' folder to learn about the most popular algorithms. Then, check out the 'Concepts'folder to know about important concepts. Finally, feel free to open the 'Technical Preparation' folder to help guide you through solving algorithm problems.</p>
+
 ---
 
 <h1>Data Structures</h1>
