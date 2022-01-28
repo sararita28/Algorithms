@@ -1,41 +1,34 @@
 <h2>Arrays (Static and Dynamic)</h2>
 <p><b>Static Arrays: </b>are fixed length containers containing n elements indexable from the range [0, n-1]. Static arrays are used a lot. Some examples of their usage include but are not limited to: storing and accessing sequential data, temporarily storing objects, used by IO routines and buffers, lookup tables and inverse lookup tables, return multiple values from a function, dynamic programming to cache answers to subproblems...</p>
-<p><b>Array Complexity</b></p>
-<table>
+<p><b>Dynamic Arrays: </b>are arrays that either increase or decrease in size automatically.</p>
+<h4><em>Important note: JavaScript is not typed dependent so there is no static array. JavaScript directly allows arrays as dynamic only.</em></h4>
+
+<p align="center"><b>(Dynamic) Array Time Complexity</b></p>
+<table align="center">
   <tr>
-    <th>Operation</th>
-    <th>Static Array</th>
-    <th>Dynamic Array</th>
-  </tr>
-  <tr>
-    <td>Access</td>
-    <td>O(1)</td>
+    <td>Accessing (by index)</td>
     <td>O(1)</td>
   </tr>
   <tr>
-    <td>Search</td>
-    <td>O(n)</td>
-    <td>O(n)</td>
-  </tr>
-  <tr>
-    <td>Insertion</td>
-    <td>N/A</td>
+    <td>Searching (linearly)</td>
     <td>O(n)</td>
   </tr>
   <tr>
-    <td>Appending</td>
-    <td>N/A</td>
-    <td>O(1)</td>
+    <td>Inserting </br> </td>
+    <td>O(n) </br>(O(1) if it's at the end)</td>
   </tr>
   <tr>
-    <td>Deletion</td>
-    <td>N/A</td>
-    <td>O(n)</td>
+    <td>Removing/Deleting</td>
+    <td>O(n) </br>(O(1) if it's at the end)</td>
   </tr>
 </table>
 
+<p align="center"><i>Note: inserting and removing are in O(n) since, in order to add an element at the beginning/middle of an array, you also need to update the rest of the elements' indices.</i></p>
+
 <h4>Using Hash tables</h4>
-<p>There are a number of ways of implementing a hash table. Here's a simple and common one: We use an array of linked lists and a hash code function.</p>
+There are a number of ways of implementing a hash table. 
+<ul>
+  <li> Here's a simple and common one: We use an array of linked lists and a hash code function.
 <p>To insert a key:</p>
 <ol>
   <li>Compute the key's hash code.</li>
@@ -48,12 +41,9 @@
   <li>Same as above.</li>
   <li>Search through the linked list for the key value pair.</li>
 </ol>
-
-<p>Alternatively to using an array of linked lists, you can use the hash table with a balanced binary search tree which gives O(logn) but uses less space.</p>
-
-<h4>ArrayList & Resizable Arrays</h4>
-<p><i>When you need an array-like DS that offers dynamic resizing you'd usually use an ArrayList</i>.</p>
-<p>An <b>ArrayList</b> is an array that resizes itself as needed while still providing O(1) access. Typically, when the array is full, it doubles in size. Doubling takes O(n) time but is ammortized, so insertion is still O(1).</p>
+</li>
+  <li>Alternatively to using an array of linked lists, you can use the hash table with a balanced binary search tree which gives O(logn) but uses less space.</li>
+</ul>
 
 <h3>Suffix Arrays</h3>
 <p>A <b>suffix</b> is a substring at the end of a string of characters. A <b>suffix array</b> is an array which contains all the <em>sorted</em> suffixes of a string. The suffix array provides a space efficient alternative to a <b>suffix tree</b> which itself is a compressed version of a <b>trie.</b> Suffix arrays can do everything suffix trees can, with some additional information such as a Longest Common Prefix (LCP) array.</p>
