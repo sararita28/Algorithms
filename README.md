@@ -1,14 +1,14 @@
 🚧 This repository is under construction. I am simply using it for note-taking purposes (for now). Eventually, I would want to organize it better to benefit other people and help them in their learning and understanding of data structures and algorithms. The language used in this rep is <b>Javascript.</b>
 
 <h3>How to use this repository</h3>
-<p>Start with the 'README' file below then head over to the 'Data Structures' folder to learn more about each DS. Each DS should have its own file. Some DS also have Javascript files with their code implementation. Once you're done with that folder, go to the 'Algorithms' folder to learn about the most popular algorithms. Then, check out the 'Concepts' folder to know about important concepts. Finally, feel free to open up the 'Technical Preparation' folder to help guide you through solving algorithm problems.</p>
+<p>Start with the 'README' file below then head over to the 'Big O Time & Space' file in the 'Concepts' folder before heading over to the 'Data Structures' folder to learn more about each DS. Each DS should have its own file. Some DS also have Javascript files with their code implementation. Once you're done with that folder, go to the 'Algorithms' folder to learn about the most popular algorithms. Then, check out the rest of the 'Concepts' folder to know about important concepts. Finally, feel free to open up the 'Technical Preparation' folder to help guide you through solving algorithm problems.</p>
 
 ---
 
 <h1>Data Structures</h1>
 <p><b>Definition:</b> A data structure (DS) is a way of organizing data so that it can be used efficiently.</p>
 <p><b>Why are they important?: </b>They're essential in creating fast and powerful algorithms, they help manage and organize data, they make code cleaner and easier to understand. They can make the difference between having an "okay" product to having an outstanding one.</p>
-<p>An <b>abstract data type (ADT)</b> is an abstraction of a data structure which provides only the interface to which a data structure must adhere to. The interface doesn't give specific details about how something should be implemented.<em>Analogy: </em> We want to go from one place to another using a mode of transportation (this is our abstract data type). How exactly we do that is our data structure. <em>Examples: </em> In the table below you have a few ADT and some possible ways of implementing them (DS).</p>
+<p>An <b>abstract data type (ADT)</b> is an abstraction of a data structure which provides only the interface to which a data structure must adhere to. The interface doesn't give specific details about how something should be implemented.<em> </br> ( Analogy: </em> We want to go from one place to another using a mode of transportation (this is our abstract data type). How exactly we do that is our data structure. ) </br> <em>Examples: </em> In the table below you have a few ADT and some possible ways of implementing them (DS).</p>
 <table align="center">
   <tr>
     <th>Abstraction Data Type</th>
