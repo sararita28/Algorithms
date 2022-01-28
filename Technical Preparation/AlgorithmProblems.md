@@ -31,3 +31,8 @@
 <p>Considering the best conceivable runtime can offer a useful hint for some problem. The best conceivable runtime is, literally, the best runtime you could conceive of a solution to a problem having. You can easily prove that there is no way you could beat the BCR.</p>
 <p>Another place where BCR is useful is that when comparing your runtime to it, if they're the same, it tells us that we're "done" in terms of optimizing the runtime, and we should therefore turn our efforts to the space complexity.</p>
 
+---
+
+<p>A good exercise to practice strings,arrays,and general data structures is to implement your own version of HashTable and Array List.</p>
+<p>be comfortable implementing in-order, post-order, and pre-order traversal. The most common of these is in-order traversal.</p>
+
