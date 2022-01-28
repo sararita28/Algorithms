@@ -52,6 +52,8 @@
   <li>Counting the iterations.</li>
   <li>Thinking about what the code "means".</li>
   <li>Visualizing what it does.</li>
+  <li>Thinking about what the code is supposed to be doing</li>
+  <li> Thinking about how the runtime changes as the input gets bigger.</li>
 </ul>
 
 ---
@@ -59,16 +61,15 @@
 <ul> Keep in mind: 
   <li>In general, we can't search an array (even if it's sorted) in better than O(logn) time.</li>
   <li>The vast majority of the time, insertion is in O(1) time.</li>
-  <li>When you see a problem where the number of elements in the problem space gets halved each time, it's likely a O(logn) runtime.</li>
+  <li>Generally speaking, when you see an algorithm with multiple recursive calls, you're looking at exponential runtime. When you see a problem where the number of elements in the problem space gets halved each time, it's likely a O(logn) runtime.</li>
   <li>When you have a recursive function that makes multiple calls, the runtime will often (but not always) look like O(branches^depth) where branches is the number of times each recursive call branches.</li>
+  <li>Memoization is a very common way to optimize exponential time in recursive algorithms.</li>
   <li>Many sorting algorithms take up extra space.</li>
   <li>To calculate O(n) space consider how many calls exist simultaneously on the call stack (i.e how much memory do you need to have available?)</li>
   <li>the base of a log doesn't matter for big O since logs of different bases are only different by a constant factor. However, this does not apply to exponents. The base of an exponent does matter. </li>
-  <li>Some ways to figure out what the runtime is is by <b>thinking about what the code means</b>, or <b>visualizing what it does</b> or <b>thinking about what the code is supposed to be doing</b> or also <b>thinking about how the runtime changes as the input gets bigger.</b></li>
   <li>Understand that the number of inputs matter. If you have 2 different inputs then don't jump to conlusions and say that an algorithms would have O(n^2) time. It could be O(nm). </li>
-  <li>Generally speaking, when you see an algorithm with multiple recursive calls, you're looking at exponential runtime</li>
-  <li>Memoization, is a very common one to optimize exponential time recursive algorithms.</li>
-  <li>The number of times we can halve nuntil we get 1 is O(log n). Exponential/logarithmic relationship: 2^x = n  <==>  log(base 2)n = x</li>
+  <li>The number of times we can halve n until we get 1 is O(log n). </li>
+  <li>Exponential/logarithmic relationship: 2^x = n  <==>  log(base 2)n = x</li>
   <img src="https://cdn.kastatic.org/googleusercontent/CfdIRZu_iMA_DFp7EilcK9igLFA42jd2hksGilRMBdINxoLKxj2LAWCjQxvj8m9E3Ik6tmVfPAFIx4whUTPp-KZw" width="200px" ></img>
  
 </ul>
