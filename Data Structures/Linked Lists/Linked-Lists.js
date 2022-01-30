@@ -83,7 +83,7 @@ class LinkedList {
 }
 
 
----
+// -------------- Alternative Code -------------------
 
 class Node {
   constructor(data, next = null) {
