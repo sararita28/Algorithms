@@ -1,4 +1,91 @@
 class Node {
+    constructor(data, next) {
+        this.data = data;
+        this.next = next;
+    }
+}
+
+class LinkedList {
+  constructor() {
+    this.head = null;
+    this.length = 0;
+  }
+
+  //Inserting at head
+  insertAtHead(data) {
+    const newNode = new Node(data, this.head);
+    this.head = newNode;
+    this.length++;
+  }
+
+  //Inserting at tail
+  insertAtTail(data) {
+    if (!this.head) return this.insertAtHead(data);
+    let current = this.head;
+    while (current.next) {
+      current = current.next;
+    }
+    current.next = new Node(data, null);
+    this.length++;
+  }
+
+  //Inserting anywhere in the list (at index)
+  insertAtIndex(index, data) {
+    if (index === 0) return this.insertAtHead(data);
+
+    let prev = this.getByIndex(index - 1);
+    if (prev == null) return null;
+
+    prev.next = new Node(data, prev.next);
+    this.length++;
+  }
+
+  //Searching for a node by index
+  getByIndex(index) {
+    if (index < 0 || index >= this.length) return null; //if index is not valid immediately return null
+
+    let current = this.head; //set current index to head
+    for (let i = 0; i < index; i++) {
+      //loop through till the index
+      current = current.next;
+    }
+    return current.data; //since the last element in the loop is pointing at the index (you can also return current if you need all the information)
+  }
+
+  //Removing at head
+  removeAtHead() {
+    this.head = this.head.next;
+    this.length--;
+  }
+
+  //Removing at tail
+  removeAtTail() {
+    if (this.head == null || this.head.next == null) return null;
+
+    let current = this.head;
+    while (current.next.next) {
+      current = current.next;
+    }
+    current.next = null;
+    this.length--;
+  }
+
+  //Removing anywhere in the list (at index)
+  removeAtIndex(index) {
+    if (index === 0) return this.removeAtHead();
+
+    const prev = this.getByIndex(index - 1);
+    if (prev == null) return null;
+
+    prev.next = prev.next.next;
+    this.length--;
+  }
+}
+
+
+---
+
+class Node {
   constructor(data, next = null) {
     this.data = data;
     this.next = next;
