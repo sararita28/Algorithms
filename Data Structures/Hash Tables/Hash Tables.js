@@ -1,3 +1,6 @@
+//This implementation of a hash function utilizes separate chaining. When there is a collision, we simply push the key value pair array to the outer array.
+
+
 class HashTable {
   constructor() {
     this.table = [];
