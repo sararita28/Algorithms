@@ -1,6 +1,8 @@
 <h2>Recursion</h2>
 <p><b>Recursive solutions</b> are built off solutions to subproblems. Many times, this will mean <i>simply to compute f(n) by adding something, removing something, or otherwise changing the solution for f(n-1)</i>. In other cases, you might <i>solve the problem for the first half of the data set, then the second half, and then merge those results.</i></p>
 
+<p>Recursive algorithms take at least O(n) space where n is the depth of the recursive call. All recursive problems can be implemented iteratively though they may be much more complex. The first step in solving a recursive problem is to ask yourself: what's the simplest possible input (base case)? The second step is to play around and visualize. The third step is to relate hard cases/large examples to simple cases/smaller examples.</p>
+
   <h3>How to:</h3>
   <p>There are many ways to divide a problem into subproblems. 3 of the most common approaches are bottom-up, top-down and half-and-half:</p>
   <ul>
