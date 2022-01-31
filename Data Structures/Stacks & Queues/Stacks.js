@@ -13,7 +13,7 @@ class Stack {
     //Removing top element and returning it
     pop() {
         if (this.count == 0) return `Stack is empty`
-        delete this.items[this.count-1]
+        this.items.pop()
         this.count--;
     }
 
