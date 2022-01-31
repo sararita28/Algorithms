@@ -1,60 +1,76 @@
+class Stack {
+    constructor() {
+        this.items = []
+        this.count = 0
+    }
+
+    //Pushing (adding to top)
+    push(element) {
+        this.items[this.count] = element
+        this.count ++
+    }
+
+    //Removing top element and returning it
+    pop() {
+        if (this.count == 0) return `Stack is empty`
+        delete this.items[this.count-1]
+        this.count--;
+    }
+
+    //Peeking (returning top element)
+    peek() {
+        if (this.count == 0) return `Stack is empty`;
+        return this.items[this.count - 1];
+    }
+
+    //Checking if stack is empty
+    isEmpty() {
+        return this.count == 0
+    }
+
+    //getting length/size of stack
+    size() {
+        return this.count
+    }
+}
+
+
+//------------------- Alternative Implementation -----------------------
 
 class Stack {
-
     constructor() {
         this.items = [];
-        this.top = 0;
     }
-
-    //adds an element to the (top of) stack
+    
+    // add element to the stack
     push(element) {
-        this.items[this.top] = element;
-        this.top = this.top + 1;
+        return this.items.push(element);
     }
-
-    //returns the length of the stack
-    length() {
-        return this.top;
-    }
-
-    //removes element from (top of) stack
+    
+    // removing top element from stack
     pop() {
-        if (this.items.length == 0) {
-            return "Underflow";
-        } else {
-            this.top = this.top - 1;
+        if(this.items.length > 0) {
             return this.items.pop();
         }
     }
-
-    //returns the top-most element in the stack but doesn't delete it
+    
+    // viewing the last element
     peek() {
-        return this.items[this.top - 1]
+        return this.items[this.items.length - 1];
     }
-
-    //checks if the stack is empty
-    isEmpty() {
-        return this.top === 0;
+    
+    // checking if the stack is empty (returns boolean)
+    isEmpty(){
+       return this.items.length == 0;
     }
-
-    //prints all elements of the stack
-    print() {
-        var top = this.top - 1
-        while (top >= 0) {
-            return this.data[top];
-            top--
-        }
+   
+    // Returning length/size of stack
+    size(){
+        return this.items.length;
     }
-
-    //reverses the stack
-    reverse() {
-        this._reverse(this.top - 1)
+ 
+    // empty the stack
+    clear(){
+        this.items = [];
     }
-    _reverse(index) {
-        if (index != 0) {
-            this._reverse(index - 1)
-        }
-        return this.data[index]
-    }
-
 }
