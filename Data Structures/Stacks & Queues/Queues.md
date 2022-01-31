@@ -1,5 +1,6 @@
 <h2>Queues</h2>
-<p>A <b>queue</b> is a linear data structure which models real-world queues by having 2 primary operations (i.e. enqueue and dequeue). Everu queue has a front and a back. We insert elements through the back (enqueuing a.k.a adding or offering) and remove them through the front (dequeuing a.k.a polling). Some examples of their usage include but are not limited to: waiting lines, keep track of the x most recently added elements, web server request management (first come first served), breadth first search graph traversal ... </p>
+<img src='https://benoitpasquier.com/images/2020/03/queue-data-structure.png'/>
+<p>A <b>queue</b> is a linear data structure which models real-world queues by having 2 primary operations (i.e. enqueue and dequeue). Every queue has a front and a back. We insert elements through the back (enqueuing a.k.a adding or offering) and remove them through the front (dequeuing a.k.a polling). Some examples of their usage include but are not limited to: waiting lines, keep track of the x most recently added elements, web server request management (first come first served), breadth first search graph traversal ... </p>
 
 <h3>Implementing a Queue</h3>
 <p>A queue uses FIFO ordering (items are removed in the order they were added). It uses the following operations:</p>
@@ -13,31 +14,27 @@
 <p>A queue can also be implemented with a linked list as long as items are added and removed from the opposite side (in fact, they're essentially the same thing).</p>
 
 
-<p><b>Queues Complexity</b></p>
-<table>
+<p align="center"><b>Queues Complexity</b></p>
+<table align="center">
   <tr>
-    <td>Enqueuing</td>
+    <td>Enqueuing (i.e. inserting)</td>
     <td>O(1)</td>
   </tr>
   <tr>
-    <td>Dequeuing</td>
+    <td>Dequeuing (i.e. removing 1st element)</td>
     <td>O(1)</td>
   </tr>
   <tr>
-    <td>Peeking</td>
+    <td>Peeking (i.e. returning top of the queue)</td>
     <td>O(1)</td>
   </tr>
   <tr>
-    <td>Contains</td>
+    <td>Searching</td>
     <td>O(n)</td>
   </tr>
   <tr>
-    <td>Removal</td>
+    <td>Removing (element other than first)</td>
     <td>O(n)</td>
-  </tr>
-  <tr>
-    <td>Is empty</td>
-    <td>O(1)</td>
   </tr>
 </table>
 
