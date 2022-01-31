@@ -1,4 +1,5 @@
 <h2>Stacks</h2>
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/stack.png"/>
 <p>A <b>stack</b> is a one-ended linear data structure which models a real world stack by having two primary operations(i.e. push and pop). Elements in a stack always get removed and added to the top of the pile (LIFO - Last in, first out). It's critical to understand that <b>you ONLY have access to the first element of a stack</b>. Some examples of their usage include but are not limited to: undo mechanisms in text editors, matching brackets and braces in compilers, model a pile of books or plates, support recursion by keeping track of previous function calls, do a depth first search on a graph ... </p>
 
 <h3>Implementing a Stack:</h3>
@@ -13,8 +14,8 @@
 <p>Unlike an array, a stack doesn't offer constant time access to the kth element, however, it does offer constant time adds and removes as it doesn't require shifting elements around.</p>
 <p>A stack can also be implemented using a linked list if items are removed and added from the same side.</p>
 
-<p><b>Stacks Complexity</b></p>
-<table>
+<p align="center"><b>Stacks Complexity</b></p>
+<table align="center">
   <tr>
     <td>Pushing</td>
     <td>O(1)</td>
