@@ -53,9 +53,9 @@ class Queue {
     }
   }
 
-  // viewing the last element
+  // viewing the first/head element
   peek() {
-    return this.items[this.items.length - 1];
+    return this.items[0];
   }
 
   // check if the queue is empty
