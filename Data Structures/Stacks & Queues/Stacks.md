@@ -17,15 +17,15 @@
 <p align="center"><b>Stacks Complexity</b></p>
 <table align="center">
   <tr>
-    <td>Pushing</td>
+    <td>Pushing (i.e. inserting)</td>
     <td>O(1)</td>
   </tr>
   <tr>
-    <td>Popping</td>
+    <td>Popping (i.e. removing)</td>
     <td>O(1)</td>
   </tr>
   <tr>
-    <td>Peeking</td>
+    <td>Peeking (i.e. returning top-most element)</td>
     <td>O(1)</td>
   </tr>
   <tr>
@@ -33,7 +33,7 @@
     <td>O(n)</td>
   </tr>
   <tr>
-    <td>Size</td>
+    <td>Size (i.e. counting items)</td>
     <td>O(1)</td>
   </tr>
 </table>
