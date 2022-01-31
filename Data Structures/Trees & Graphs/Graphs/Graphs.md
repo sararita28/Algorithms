@@ -59,4 +59,5 @@
   <li> BFS is often preferred If we want to find the shortest path (or just any path) between two nodes.</li>
   <li>BFS is a bit less intuitive.</li>
   <li>If you are asked to implement BFS, the key thing to remember is the use of the queue. </li>
+  <li>DFS uses a stack while BFS uses a queue.</li>
   </ul>
