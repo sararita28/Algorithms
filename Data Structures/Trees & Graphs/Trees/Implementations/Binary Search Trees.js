@@ -1,176 +1,103 @@
+/*In this BST implementation we used the BST definition that does not allow duplicates. We can easily change that by adding an equal sign where needed 
+depending on where we want our duplicates to be (i.e. left or right subtree) */
+
 class Node {
-
-  constructor(data) {
+  constructor(data, left = null, right = null) {
     this.data = data;
-    this.left = null;
-    this.right = null;
+    this.left = left;
+    this.right = right;
   }
-} 
+}
 
-  class BinarySearchTree {
-    constructor() {
-      this.root = null;
-    }
-//      ----------------------- Inserting a Node -----------------------
-      
-      // helper method to create a new node with a value data to be inserted and calls insertNode
-      insert(data) {
-      
-      var newNode = new Node(data);
-      // if root is null then node will be added to the tree and made root
-      if (this.root === null) {
-        this.root = newNode;
-      } else {
-      // if not root, it'll find the correct position in the tree to add the node
-        this.insertNode(this.root, newNode);
-      }
-      // insert a node with given data in found location
-      insertNode(node, newNode) {
-      
-        /if data is less than node
-        if (newNode.data < node.data) {
-        
-          // go to left subtree and if null
-          if (node.left === null) {
-          
-          node.left = newNode; // insert node here
-          } else {
-            
-            this.insertNode(node.left, newNode); //  if left not null, recur till null is found
-          }
-          
+class BinarySearchTree {
+  constructor() {
+    this.root = null;
+  }
+
+  //adding a new node
+  add(data) {
+    const node = this.root;
+    if (node == null) return (this.root = new Node(data));
+
+    //if root is not null create a recursive function to figure out where to put the node
+    const searchTree = (node) => {
+      if (data < node.data) {
+        if (node.left == null) {
+          return (node.left = new Node(data));
         } else {
-        
-          // go to right subtree and if null 
-          if (node.right === null) {
-          
-            node.right = newNode; // insert node here
-          } else {
-          
-            this.insertNode(node.right, newNode); // if right is null recur till null is found
-          }
-      }
-      
-      }
-      
- //           ----------------------- Removing a Node -----------------------
-      remove(data) {
-         
-         //root is re-initialized with root of a modified tree
-         this.root = this.removeNode(this.root, data);
-      }
-      
-      //helper method to remove a node with a given data (recurs over the tree to find the data and removes it)
-      removeNode(node, key) {
-        
-        //if root is null then tree is empty
-        if (node === null) {
-          
-          return null;
-        //else if the data to be deleted is less than root's data
-        } else if (key < node.data) {
-          
-          //then go to left subtree
-          node.left = this.removeNode(node.left, key);
-          return node;
-        //else if the data to be deleted is greater than root's data
-        } else if ( key > node.data) {
-        
-          //then go to right subtree
-          node.right = this.removeNode(node.right, key);
-          return node;
-        } else {   // if data is similar to the root's data
-        
-          if (node.left === null && node.right === null) { //if node has no children
-            
-            //delete node
-            node = null;
-            return node;
-          }
-          // if node has 1 child
-          if (node.left === null) {
-            
-            node = node.right;
-            return node;
-          } else if ( node.right === null) {
-            
-            node = node.left;
-            return node;
-          }
-          
-          // if node has 2 children, store minimum node of right subtree in 'aux'
-          var aux = this.findMinNode(node.right);
-          node.data = aux.data;
-          node.right = this.removeNode(node.right, aux.data);
-          return node;
+          return searchTree(node.left);
         }
-      }
-//            ----------------------- Perform inorder traversal -----------------------
-      inorder(node){
-      
-        if (node !== null) {
-        
-          this.inorder(node.left);
-          console.log(node.data);
-          this.inorder(node.right);
+      } else if (data > node.data) {
+        if (node.right == null) {
+          return (node.right = new Node(data));
+        } else {
+          return searchTree(node.right);
         }
-      }
-//            ----------------------- Perform preorder traversal -----------------------
-      preorder(node){
-        
-        if (node !== null) {
-        
-          console.log(node.data);
-          this.preorder(node.left);
-          this.preorder(node.right);
-        }
-      }
-//            ----------------------- Perform postorder traversal -----------------------
-      postorder(node){
-      
-        if (node !== null) {
-        
-          this.preorder(node.left);
-          this.preorder(node.right);
-          console.log(node.data);
-        }
-      }
-      
-//            ----------------------- Finds minimum node -----------------------
-      findMinNode(node){
-      
-    // if left of a node is null then it must be minimum node
-    if(node.left === null) {
-        return node;
-    } else {
-        return this.findMinNode(node.left);
-    }     
-//            ----------------------- Returns root node -----------------------
-    getRootNode(){
-    
-    return this.root;
-    }
-
-//            ----------------------- Search for node with given data -----------------------
-    search(node, data){
-    
-     // if tree is empty return null
-      if (node === null) {
-
-          return null;
-
-      // if data is less than node's data move left
-      } else if (data < node.data) {
-          return this.search(node.left, data);
-
-      // if data is more than node's data move right
-      } else if(data > node.data) {
-          return this.search(node.right, data);
-
-      // if data is equal to the node data return node
       } else {
-          return node;
+        return null;
+      }
+    };
+    return searchTree(node);
+  }
+
+  //finding a node
+  find(data) {
+    let current = this.root;
+    while (current.data !== data) {
+      if (data < current.data) {
+        current = current.left;
+      } else {
+        current = current.right;
+      }
+      if (current === null) {
+        return null;
       }
     }
+    return current;
+  }
 
+  //finding the minimum (in BST the min node is always the leftmost node)
+  findMin() {
+    let current = this.root;
+    while (current.left !== null) {
+      current = current.left;
+    }
+    return current.data; //when we break out of this while loop, the current element will be the leftmost element, hence the minimum element
+  }
+
+  //finding the maximum (in BST the max node is always the rightmost node)
+  findMax() {
+    let current = this.root;
+    while (current.right !== null) {
+      current = current.right;
+    }
+    return current.data;
+  }
+
+  //removing a node
+  remove(data) {
+    const removeNode = (node, data) => {
+      if (node == null) return null; // if tree is empty
+      if (data == node.data) {
+        if (node.left == null && node.right == null) return null; //if node has no children
+        if (node.left == null) return node.right; //if node has no left child
+        if (node.right == null) return node.left; //if node has no right child
+        //if node has 2 children, replace it with leftmost child of its right child
+        let temp = node.right;
+        while (temp.left !== null) {
+          temp = temp.left;
+        }
+        node.data = temp.data;
+        node.right = removeNode(node.right, temp.data);
+        return node;
+      } else if (data < node.data) {
+        node.left = removeNode(node.left, data);
+        return node;
+      } else {
+        node.right = removeNode(node.right, data);
+        return node;
+      }
+    };
+    this.root = removeNode(this.root, data);
+  }
 }
