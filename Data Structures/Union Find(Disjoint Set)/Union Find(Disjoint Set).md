@@ -1,7 +1,8 @@
-<h2>Union Find (a.k.a disjoint set)</h3>
+<h2>Union Find (a.k.a disjoint set)</h2>
+<img src='https://i0.wp.com/algorithms.tutorialhorizon.com/files/2018/04/Disjoint-Sets-example.png?ssl=1'/>
 <p><b>Definition:</b> Union Find is a DS that keeps track of elements which are split into 1+ disjoint sets. It has two primary operations: <b>find</b> and <b>union</b>. 'Find' will tell you what group an element belongs to, and 'Union' merges two groups together. Some examples of Union Find usage include but are not limited to: Kruskal's minimum spanning tree algorithm, grid percolation, network connectivity, least common ancestor in trees, image processing...</p>
-<p><b>Union Find Complexity</b></p>
-<table>
+<p align='center'><b>Union Find Complexity</b></p>
+<table align='center'>
   <tr>
     <td>Construction</td>
     <td>O(n)</td>
