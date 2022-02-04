@@ -66,7 +66,7 @@
   <li> BFS is often preferred If we want to find the shortest path (or just any path) between two nodes.</li>
   <li>BFS is a bit less intuitive.</li>
   <li>If you are asked to implement BFS, the key thing to remember is the use of the queue. </li>
-  <li>DFS uses a stack while BFS uses a queue.</li>
+  <li>DFS uses a stack (often via recursion) while BFS uses a queue.</li>
   <li>It's very common to use Hash maps in graph problems.</li>
   <li>One way to verify if a graph doesn't contain directed cycles is by using Tarjan's algorithm</li>
   </ul>
