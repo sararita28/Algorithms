@@ -13,4 +13,7 @@ Keep in Mind:
 <ul>
   <li>Some people call top-down dynamic programming"memoization" and only use "dynamic programming" to refer to bottom-up work.</li>
   <li>Drawing the recursive calls as a tree is a great way to figure out the runtime of a recursive algorithm.</li>
+  <li>A 2D grid is a common way of solving 2D Dynamic Programming Problems.</li>
+  <li>Many of the dynamic programming problems are optimization problems. .</li>
+  <li>If you see terms like shortest/longest,  minimized/maximized, least/most, fewest/greatest, minimum/maximum, biggest/smallest etc... it might be a dynamic problem, so pay attention to anything that sounds like optimization.</li>
 </ul>
