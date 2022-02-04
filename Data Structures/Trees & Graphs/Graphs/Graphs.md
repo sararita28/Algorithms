@@ -50,6 +50,13 @@
     <li>In bidirectional search, we have two searches that collide after approximately d/2 levels (the midpoint of the path). The search from s visits approximately k^(d/2), as does the search from t. That's approximately 2 k(d/2), or O(k^(d/2)), nodes total. This might seem like a minor difference, but it's not. It's huge. Recall that (k^(d/2))*(k^(d/2))=k^d The bidirectional search is actually faster by a factor of k^(d/2). Put another way: if our system could only support searching "friend of friend" paths in breadth-first search, it could now likely support "friend of friend of friend of friend" paths. We can support paths that are twice as long.</li>
   </ul>
   
+  <h3>Topological sort (a.k.a top sort)</h3>
+  <p><b>Top sort</b> is an algorithm that will give us a topological ordering on a directed graph. A <b>topological ordering</b> is an ordering of the nodes in a directed graph where, for each directed edge from node A to B, node A appears before B in the ordering. The top sort algorithm can find topological ordering in O(V+E) time. <b><i>Important note:</b> Topological orderings are NOT unique!</i></p>
+  <p>The motivation behind top sort is that many real world situations can be modelled as graphs with directed edges where some events must occur before others. Some examples of usage of top sort include but are not limited to: school class prerequisites, program dependencies, event scheduling, assembly instructions...</p>
+  <p>The only type of graph which has a valid topological ordering is a Directed Acyclic Graph(DAG). That is, a graph with directed edges and no cycles.</p>
+  <p><b>Q:</b> How do I verify that my graph does not contain a directed cycle?</p> 
+  <p><b>A:</b> One method is to use Tarjan's strongly connected component algorithm which can be used to find these cycles.</p>
+  
   ---
   
   Keep in mind: 
@@ -61,4 +68,5 @@
   <li>If you are asked to implement BFS, the key thing to remember is the use of the queue. </li>
   <li>DFS uses a stack while BFS uses a queue.</li>
   <li>It's very common to use Hash maps in graph problems.</li>
+  <li>One way to verify if a graph doesn't contain directed cycles is by using Tarjan's algorithm</li>
   </ul>
