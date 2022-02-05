@@ -74,4 +74,5 @@
   <li>Array shifts are very expensive, but in linked lists it's easier, you just create other lists.</li>
   <li>Linked lists tend to do very well with accessing and sorting numbers.</li>
   <li>If you're having trouble solving a linked list problem, explore if a recursive approach will work. </li>
+  <li>The runner (2-pointers) technique is used in a lot of LL questions</li>
 </ul>
