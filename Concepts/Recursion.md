@@ -11,7 +11,8 @@
     <li><b>Half-and-half:</b> divide the data set in half. Example: binary search, merge sort...</li>
   </ul>
   
-    <h3>Recursive vs. Iterative Solutions</h3>
+<h3>Recursive vs. iterative solutions</h3>
+
 <p>Recursive algorithms <b>can be very space inefficient.</b> Each recursive call adds a new layer to the stack, which means that if your algorithm recurses to a depth of n, it uses at least O(n) memory. For this reason, <b>it's often better to implement a recursive algorithm <i>iteratively.</i></b></p>
 <p>All recursive algorithms can be implemented iteratively, although sometimes the code to do so is much more complex.</p>
   
