@@ -45,6 +45,98 @@
 </table>
 <p><b>Runtime is not a multiple choice question. You should NOT assume that something has a particular runtime by sheer process of elimination. Derive, don't guess</b></p>
 <img src="https://miro.medium.com/max/1200/1*5ZLci3SuR0zM_QlZOADv8Q.jpeg" width="800px"></img>
+
+<table align='center'>
+  <tr>
+    <th>Data Structure</th>
+    <th>Accessing</th>
+    <th>Searching</th>
+    <th>Inserting</th>
+    <th>Deleting</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Arrays</td>
+    <td>O(1): By index</td>
+    <td>O(n)</td>
+    <td>O(n).</br> O(1): If it's at the end</td>
+    <td>O(n) </br> O(1): If it's at the end</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>HashTable (If good uniform one)</td>
+    <td>N/A</td>
+    <td>O(1)</td>
+    <td>O(1)</td>
+    <td>O(1)</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>HashTable (If NOT a good uniform one)</td>
+    <td>N/A</td>
+    <td>O(n)</td>
+    <td>O(n)</td>
+    <td>O(n)</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Singly Linked List</td>
+    <td>O(n)</td>
+    <td>O(n)</td>
+    <td>O(1)</td>
+    <td>O(n): at the head </br> O(n): at tail middle</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Doubly Linked List</td>
+    <td>O(n)</td>
+    <td>O(n)</td>
+    <td>O(1)</td>
+    <td>O(1): at head or tail </br> O(n): at middle</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Stacks</td>
+    <td>Peeking: O(1)</td>
+    <td>O(n)</td>
+    <td>Pushing: O(1)</td>
+    <td>Popping: O(1)</td>
+    <td>Size(counting items): O(1)</td>
+  </tr>
+  <tr>
+    <td>Queues</td>
+    <td>Peeking: O(1)</td>
+    <td>O(n)</td>
+    <td>Enqueueing: O(1)</td>
+    <td>Dequeueing: O(1) </br> Removing other than first: O(n)</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Priority Queue w/ binary heap</td>
+    <td>Peeking: O(1)</td>
+    <td>Naive contains: O(n) </br> Contains check w/ hash table: O(1)</td>
+    <td>O(logn)</td>
+    <td>Naive removing: O(n) </br> Removing w/ hash table: O(logn)</td>
+    <td>Binary Heap construction: O(n)</td>
+  </tr>
+    <tr>
+    <td>Binary Search Tree</td>
+    <td></td>
+    <td>O(n)</td>
+    <td>O(n)</td>
+    <td>O(n)</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Balanced Binary Search Tree</td>
+    <td></td>
+    <td>O(logn)</td>
+    <td>O(logn)</td>
+    <td>O(logn)</td>
+    <td></td>
+  </tr>
+</table>
+
 <p><b>Amortized time</b> describes how a worst-case happens once in awhile but then won't happen again in a long time so the cost is <b>amortized</b>.</p>
 
 <p>You can derive the runtime several ways. Some Examples are :</p>
