@@ -8,8 +8,6 @@ In the code below, we are looking for the element n in the sorted array 'element
 If n is within the array it will return the elements as well as how many tries it took us to find it. Else, it returns -1
 */
 
-let elements = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
 function binarySearch(elements, n) {
   let high = elements.length - 1;
   let low = 0;
