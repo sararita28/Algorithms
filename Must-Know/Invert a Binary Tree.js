@@ -5,8 +5,8 @@ function invertBinaryTree(head) {
     head.left = head.right;
     head.right = temp;
 
-    invertTree(head.left);
-    invertTree(head.right);
+    invertBinaryTree(head.left);
+    invertBinaryTree(head.right);
   }
   return head;
 }
