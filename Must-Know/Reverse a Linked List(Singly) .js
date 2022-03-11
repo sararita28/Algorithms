@@ -1,33 +1,31 @@
 //Recursively  O(n) time & O(n) space
-
 function reverse(head) {
-  if (!head || !head.next) {
-    return head;
-  }
-  let tmp = reverse(head.next);
+  if (!head || !head.next) return head;
+
+  let temp = reverse(head.next);
   head.next.next = head;
   head.next = undefined;
-  return tmp;
+  return temp;
 }
 
+
+
 //Iteratively  O(n) time & O(1) space
-
-
 function reverse(head) {
-  let node = head,
-      previous,
-      tmp;
+  let node = head;
+  let previous;
+  let temp
 
   while (node) {
-    // save next before we overwrite node.next!
-    tmp = node.next;
+    // save next before we overwrite node.next
+    temp = node.next;
 
     // reverse pointer
     node.next = previous;
 
     // step forward in the list
     previous = node;
-    node = tmp;
+    node = temp;
   }
 
   return previous;
