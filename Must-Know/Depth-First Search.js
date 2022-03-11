@@ -4,9 +4,9 @@
 function dfs(graph, startNode) {
   const stack = [startNode];
   while (stack.length > 0) {
+    //remove the last element of the stack and add its neighbors to the stack
     const current = stack.pop();
     for (let neighbor of graph[current]) {
-      //push neighbors to top of stack
       stack.push(neighbor);
     }
     return current; //returns nodes in order of viewing
