@@ -1,4 +1,7 @@
-function depthFirstSearch(graph, startNode) {
+
+//Iterative
+
+function dfs(graph, startNode) {
   const stack = [startNode];
   while (stack.length > 0) {
     const current = stack.pop();
@@ -6,17 +9,16 @@ function depthFirstSearch(graph, startNode) {
       //push neighbors to top of stack
       stack.push(neighbor);
     }
-    return current //returns nodes in order of viewing
+    return current; //returns nodes in order of viewing
   }
 }
 
+//Recursive
 
-// --------------Alternative implementation using recursion ---------------
-
-function recursiveDepthFirstSearch(graph, startNode) {
+function recursiveDfs(graph, startNode) {
   console.log(startNode); // logs nodes in order of vieweing
 
   for (let neighbor of graph[startNode]) {
-    recursiveDepthFirstSearch(graph, neighbor);
+    recursiveDfs(graph, neighbor);
   }
 }
