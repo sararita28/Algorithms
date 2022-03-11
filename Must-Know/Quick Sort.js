@@ -1,8 +1,7 @@
 /*Quick sort:
 Runtime: O(n^2) | Memory: O(logn)
-Pick a random element and partition the array such that all numbers that are less than the element 
-  come before all numbers that are greater than it. If we repeatedly partition the array (and its sub-arrays) around an element, the array will eventually become 
-    sorted.
+Pick a random element and partition the array such that all numbers that are less than the element come before all numbers that are greater than it. 
+If we repeatedly partition the array (and its sub-arrays) around an element, the array will eventually become sorted.
 
 Quick sort is a divide and conquer algorithms(i.e. recursive algorithms). In quicksort, the combine step doesn't do anything; the real work of quicksort 
 happens during the divide step(in pivot selection to be precise), which partitions subarray array[p..r] around a pivot drawn from the subarray. Although we 
@@ -27,16 +26,12 @@ function swap(array, left, right) {
 
 function partition(array, left, right) {
   //pivot is usually the rightmost element but for this example we chose the middle
-  var pivot = array[Math.floor((right + left) / 2)], 
-    i = left, //left pointer
-    j = right; //right pointer
+  let pivot = array[Math.floor((right + left) / 2)]
+  let [i, j] = [left, right]
+  
   while (i <= j) {
-    while (array[i] < pivot) {
-      i++;
-    }
-    while (array[j] > pivot) {
-      j--;
-    }
+    while (array[i] < pivot) i++;
+    while (array[j] > pivot) j--;
     if (i <= j) {
       swap(array, i, j); 
       i++;
@@ -47,17 +42,15 @@ function partition(array, left, right) {
 }
 
 function quickSort(array, left, right) {
-  var index;
+  let index;
   if (array.length > 1) {
     index = partition(array, left, right); //index returned from partition
-    if (left < index - 1) {
-      //more elements on the left side of the pivot
-      quickSort(array, left, index - 1);
-    }
-    if (index < right) {
-      //more elements on the right side of the pivot
-      quickSort(array, index, right);
-    }
+    
+    //more elements on the left side of the pivot
+    if (left < index - 1) quickSort(array, left, index - 1);
+    
+    //more elements on the right side of the pivot
+    if (index < right) quickSort(array, index, right);
   }
   return array;
 }
