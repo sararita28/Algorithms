@@ -9,6 +9,8 @@ The steps of mergesort are :
 1. Recursively split the input array in half until a subarray with only 1 element is produced.
 2. Merge each sorted subarray together to produce the final sorted array.
 */
+
+//helper function
 function merge(left, right) {
   //left and right are 2 sorted subarrays that we will merged into a single array 'arr'
   let arr = [];
