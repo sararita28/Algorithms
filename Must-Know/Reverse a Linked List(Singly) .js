@@ -4,7 +4,7 @@ function reverse(head) {
 
   let temp = reverse(head.next);
   head.next.next = head;
-  head.next = undefined;
+  head.next = null;
   return temp;
 }
 
@@ -17,16 +17,11 @@ function reverse(head) {
   let temp
 
   while (node) {
-    // save next before we overwrite node.next
+    // store node.next in a temp
     temp = node.next;
-
-    // reverse pointer
     node.next = previous;
-
-    // step forward in the list
     previous = node;
     node = temp;
   }
-
   return previous;
 }
