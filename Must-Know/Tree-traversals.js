@@ -50,20 +50,20 @@ function postOrder(root) {
 //Level-order traversal
 //level-order and BFS are essentially the same thing
 function levelOrder(root) {
-  let visited = [];
+  let result = [];
   let queue = [];
   let current = root;
 
   queue.push(current);
   while (queue.length) {
     current = queue.shift();
-    visited.push(current.val);
+    result.push(current.val);
 
     if (current.left) queue.push(current.left);
     if (current.right) queue.push(current.right);
   }
 
-  return visited;
+  return result;
 }
 
 
@@ -78,5 +78,5 @@ function levelOrder(root) {
 -Pre-order: [ 20, 14, 9, 3, 11, 19, 57, 31, 62, 72 ]
 -Post-order: [ 3, 11, 9, 19, 14, 31, 72, 62, 57, 20 ]
 -Inorder: [ 3, 9, 11, 14, 19, 20, 31, 57, 62, 72 ]
--Level order: [ 20, 14, 57, 9, 19, 31, 62, 3, 11, 72 ]
+-Level order/bfs: [ 20, 14, 57, 9, 19, 31, 62, 3, 11, 72 ]
 */
