@@ -16,6 +16,7 @@ function preOrder(root) {
 
 //Inorder traversal
 //visits left then current then right, prints value between the recursive calls
+//Recursive
 function inOrder(root) {
   let result = [];
   let current = root;
@@ -29,6 +30,26 @@ function inOrder(root) {
   traverse(current);
   return result;
 }
+
+//Iterative
+var kthSmallest = function(root, k) {
+    let stack = []
+    
+    while (stack.length >0 || root != null) {
+        while (root != null) {
+            stack.push(root)
+            root = root.left
+        }
+        if (stack.length > 0) {
+            root = stack.pop()
+            k--
+            if (k == 0) return root.val
+            root = root.right
+            }
+    }
+}
+
+
 
 //Post-order traversal
 //visits children then current, prints value after the recursive calls
