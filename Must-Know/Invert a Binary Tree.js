@@ -13,16 +13,16 @@ function invertBinaryTree(head) {
 
 
 //Iteratively (using pre-order traversal)
-function invertBinaryTree(root) {
-    if (root == null) return
-    let stack = [root]
+function invertBinaryTree(head) {
+    if (head == null) return
+    let stack = [head]
     while (stack.length > 0) {
         // pop top node from stack
         let current = stack.pop()
 
         swap(current.left, current.right)
         if (current.right) stack.push(current.right)
-        if (curr.left) stack.push(current.left)
+        if (current.left) stack.push(current.left)
     }
 }
 
