@@ -31,26 +31,6 @@ function inOrder(root) {
   return result;
 }
 
-//Iterative
-var kthSmallest = function(root, k) {
-    let stack = []
-    
-    while (stack.length >0 || root != null) {
-        while (root != null) {
-            stack.push(root)
-            root = root.left
-        }
-        if (stack.length > 0) {
-            root = stack.pop()
-            k--
-            if (k == 0) return root.val
-            root = root.right
-            }
-    }
-}
-
-
-
 //Post-order traversal
 //visits children then current, prints value after the recursive calls
 function postOrder(root) {
