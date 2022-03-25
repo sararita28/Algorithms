@@ -25,4 +25,5 @@ Keep in mind:
   <li>All recursive problems can be implemented iteratively though they may be much more complex.</li>
   <li>A good hint that a problem is recursive is that it can be built off of subproblems.</li>
   <li>When you hear a problem beginning with the following statements, it's often (though not always) a good candidate for recursion: "Design an algorithm to compute the nth ... , "Write code to list the first n ... n "Implement a method to compute all... </li>
+  <li>The runtime of a recursive function with multiple branches is typically O(branches^depth).</li>
 </ul>
