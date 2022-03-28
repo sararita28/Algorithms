@@ -25,3 +25,14 @@ function reverse(head) {
   }
   return previous;
 }
+
+
+//Other iterative solution
+function reverse(head) {
+  let prev = null, curr = head
+  
+  while (curr) {
+    [curr.next, prev, curr] = [prev, curr, curr.next]
+  }
+  return prev
+}
