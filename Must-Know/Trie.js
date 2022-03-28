@@ -1,9 +1,9 @@
 class TrieNode {
   constructor(key) {
     this.key = key; // the "key" value will be the character in sequence
-    this.parent = null; // we keep a reference to parent
-    this.children = {}; // we have hash of children
-    this.end = false; // check to see if the node is at the end
+    this.parent = null; 
+    this.children = {}; 
+    this.end = false; 
   }
 
   getWord() {
