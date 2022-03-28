@@ -1,4 +1,3 @@
-/*Quick sort:
 Runtime: O(n^2) | Memory: O(logn)
 Pick a random element and partition the array such that all numbers that are less than the element come before all numbers that are greater than it. 
 If we repeatedly partition the array (and its sub-arrays) around an element, the array will eventually become sorted.
@@ -14,9 +13,10 @@ In practice, quicksort outperforms merge sort, and it significantly outperforms 
 Keep in mind:
 In merge sort, you never see a subarray with no elements, but you can in quicksort, if the other elements in the subarray are all less than the pivot or all 
 greater than the pivot.
-*/
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif" />
 
+```
 function swap(array, left, right) {
 //  function that swaps 2 elements
   var temp = array[left];
@@ -54,3 +54,4 @@ function quickSort(array, left, right) {
   }
   return array;
 }
+```
