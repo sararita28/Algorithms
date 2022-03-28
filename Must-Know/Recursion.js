@@ -8,3 +8,21 @@ function countUp() {
   }
 }
 countUp();
+
+
+
+//Below is a code example to the '46. Permutations' Leetcode question, using recursive backtracking
+var permute = function(nums) {
+    dfs(nums, result=[], index=0);
+    return result;
+};
+
+function dfs(nums, result, index) {
+    if (index === nums.length - 1) return result.push(nums.slice(0));
+    
+    for (let i = index; i < nums.length; i++) {
+       [nums[i], nums[index]] = [nums[index], nums[i]]
+        dfs(nums, result, index + 1);
+        [nums[i], nums[index]] = [nums[index], nums[i]]
+    }
+}
