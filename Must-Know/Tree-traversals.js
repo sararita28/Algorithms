@@ -1,7 +1,7 @@
 //Pre-rder, inorder and post-order traversals are all forms of DFS. They can be implemented recursively or iteratively.
 
 //Pre-order traversal
-//visits current before children, prints value before the recursive calls
+//visits current before children (left then right), prints value before the recursive calls
 function preOrder(root) {
   let result = [];
   let current = root;
@@ -18,7 +18,6 @@ function preOrder(root) {
 
 //Inorder traversal
 //visits left then current then right, prints value between the recursive calls
-//Recursive
 function inOrder(root) {
   let result = [];
   let current = root;
@@ -34,7 +33,7 @@ function inOrder(root) {
 }
 
 //Post-order traversal
-//visits children then current, prints value after the recursive calls
+//visits children (left then right) then current, prints value after the recursive calls
 function postOrder(root) {
   let result = [];
   let current = root;
@@ -76,7 +75,7 @@ function levelOrder(root) {
 
 /* Results:
 -Pre-order: [ 20, 14, 9, 3, 11, 19, 57, 31, 62, 72 ]
--Post-order: [ 3, 11, 9, 19, 14, 31, 72, 62, 57, 20 ]
 -Inorder: [ 3, 9, 11, 14, 19, 20, 31, 57, 62, 72 ]
+-Post-order: [ 3, 11, 9, 19, 14, 31, 72, 62, 57, 20 ]
 -Level order/bfs: [ 20, 14, 57, 9, 19, 31, 62, 3, 11, 72 ]
 */
