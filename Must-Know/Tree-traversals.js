@@ -67,7 +67,7 @@ function levelOrder(root) {
 }
 
 
-// Say you have the following tree: 
+// Say you have the following tree (which happens to be a BST)
 /////////////////////  20 //////////////////////
 ///////////  14  //////////////  57  ///////////
 //////  9  ////  19  ////  31  //////  62  /////
