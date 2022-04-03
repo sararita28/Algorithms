@@ -1,25 +1,23 @@
-/*To be able to solve these kinds of problems, we want to know the smallest element in one part and the biggest element in the other part. Two Heaps 
+To be able to solve these kinds of problems, we want to know the smallest element in one part and the biggest element in the other part. Two Heaps 
 pattern uses 2 Heap data structure to solve these problems; a Min Heap to find the smallest element and a Max Heap to find the biggest element.
 
-//Min-Heap
-//Below is the explanation for the following implementation of minHeap:
-//class MinHeap is initially set with a dummy node (null)
-//It has 3 methods: 
-
-  // getMin : (the min in a minheap is always the first element. Since our index 0 is a null node we should return 
+Below is the explanation for the following implementation of minHeap:
+class MinHeap is initially set with a dummy node (null)
+It has 3 methods: 
+1. getMin : (the min in a minheap is always the first element. Since our index 0 is a null node we should return 
   the element at index 1)
-  
-  // insert : (we start by simply pushing the node to our heap. If the heap was empty then no additional work is needed. 
+2. insert : (we start by simply pushing the node to our heap. If the heap was empty then no additional work is needed. 
   Else, we store the index of the element we just added in a 'current' variable. While the parent (current/2) is greater 
   than current and current > 1, we swap them up. Finally current becomes the parent
-  
-  // remove : (removes the smallest element) If there are more than 2 elements, we put the rightmost element instead of 
+3. remove : (removes the smallest element) If there are more than 2 elements, we put the rightmost element instead of 
   the minHeap (1st node) and remove the smallest element. We store the first element's index in a 'current' variable 
   and do the same with the leftChildIndex(current * 2) and rightChildIndex(current * 2 + 1). While the 2 children are 
   present and the current el is greater than either one of them, compare left to right. If latter is smallest swap curr 
   with right and set curr to be right. Do the opposite if left is smallest. 
   Update leftChildIndex and rightChildIndex = current * 2 and current * 2 + 1 respectively
-*/
+
+
+Min-Heap
 ```
   class MinHeap {
   constructor() {
@@ -94,7 +92,7 @@ pattern uses 2 Heap data structure to solve these problems; a Min Heap to find t
 }
 ```
 
-//Max-heap
+Max-heap
 ```
 class Heap {
   constructor(maxSize) {
