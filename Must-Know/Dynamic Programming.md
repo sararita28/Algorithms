@@ -3,12 +3,13 @@ Good potential candidates (problems) for dynamic programming:
 - The sub problems will usually overlap at some point (i.e the program will have to solve the same problem at least more than once).
 - The problem calls for optimization (minimization/maximization)
 
-To solve a problem using DP. You could either use Recursion and store the repeating computations using memoization or implement a bottom-up approach.
+To solve a problem using DP. <b>You could either use Recursion and store the repeating computations using memoization OR implement a bottom-up approach.</b>
 
 Let's showcase these 2 approaches by solving the fibonacci problem
 
+
+Recursion + Memoization:
 ```
-//Recursion + Memoization
 const fib = (n, memo = []) => {
   if (n == 1 || n == 2 ) return 1
   if (memo[n]) return memo[n]
@@ -17,8 +18,8 @@ const fib = (n, memo = []) => {
   return result
 }
 ```
+Bottom-up approach:
 ```
-//Bottom-up approach
 const fib = (n) => {
   if (n == 1 || n == 2) return 1;
   let bottomUp = new Array(n + 1).fill(0);
