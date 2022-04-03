@@ -21,12 +21,9 @@ const fib = (n, memo = []) => {
 Bottom-up approach:
 ```
 const fib = (n) => {
-  if (n == 1 || n == 2) return 1;
   let bottomUp = new Array(n + 1).fill(0);
   (bottomUp[1] = 1), (bottomUp[2] = 1);
-  for (let i = 3; i <= n; i++) {
-    bottomUp[i] = bottomUp[i - 1] + bottomUp[i - 2];
-  }
+  for (let i = 3; i <= n; i++) bottomUp[i] = bottomUp[i - 1] + bottomUp[i - 2];
   return bottomUp[n];
 };
 ```
