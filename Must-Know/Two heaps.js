@@ -1,8 +1,7 @@
-To be able to solve these kinds of problems, we want to know the smallest element in one part and the biggest element in the other part. Two Heaps 
+/*To be able to solve these kinds of problems, we want to know the smallest element in one part and the biggest element in the other part. Two Heaps 
 pattern uses 2 Heap data structure to solve these problems; a Min Heap to find the smallest element and a Max Heap to find the biggest element.
 
-Min-Heap
-```
+//Min-Heap
 //Below is the explanation for the following implementation of minHeap:
 //class MinHeap is initially set with a dummy node (null)
 //It has 3 methods: 
@@ -20,8 +19,8 @@ Min-Heap
   present and the current el is greater than either one of them, compare left to right. If latter is smallest swap curr 
   with right and set curr to be right. Do the opposite if left is smallest. 
   Update leftChildIndex and rightChildIndex = current * 2 and current * 2 + 1 respectively
-
-
+*/
+```
   class MinHeap {
   constructor() {
     this.heap = [null];
@@ -95,7 +94,7 @@ Min-Heap
 }
 ```
 
-Max-heap
+//Max-heap
 ```
 class Heap {
   constructor(maxSize) {
