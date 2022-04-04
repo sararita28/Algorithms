@@ -1,5 +1,3 @@
-While this repository was meant to be for note-taking purposes only, I'd be happy if it could benefit other people and help them in their learning and understanding of data structures and algorithms. Feel free to use this rep however you'd like. The language used in this rep is <b>Javascript.</b>
-
 <h3>How to use this repository (suggestion only)</h3>
 <ol>
   <li>Start with the 'README' file below</li>
