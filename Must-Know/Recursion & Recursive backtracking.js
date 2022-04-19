@@ -35,3 +35,30 @@ function dfs(nums, result, index) {
         [nums[i], nums[index]] = [nums[index], nums[i]]
     }
 }
+
+/*
+Permutation means arranging things with an order. Permutations are best visualized with trees. The complexity of combinatorial problems often grows 
+rapidly with the size of the problem. In combinatorial search problems, search space is in the shape of a tree. The tree that represents all the 
+possible states is called a State-space Tree. Each node of the state-space tree represents a state we can reach in a combinatorial search (by doing 
+a particular combination). Leaf nodes are the solutions to the problem. Combinatorial search problems boil down to DFS/backtracking on the state-space 
+tree. Since the search space can be quite large, we often have to "prune" the tree, i.e. discard branches. 
+Three steps to conquer combinatorial search problems: 
+1. Identify the state(s).
+2. Draw the state-space tree.
+3. DFS/backtrack on the state-space tree.
+
+backtracking template (for step 3):
+
+function dfs(node, state):
+    if state is a solution:
+        report(state) # e.g. add state to final result list
+        return
+
+    for child in children:
+        if child is a part of a potential solution:
+            state.add(child) # make move
+            dfs(child, state)
+            state.remove(child)
+*/
+
+
