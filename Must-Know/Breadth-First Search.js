@@ -3,6 +3,8 @@ Uses a queue to keep track of all the nodes of a level before jumping onto the n
 level-by-level order can be efficiently solved using this approach. The Tree BFS pattern works by pushing the root node to the queue and then 
 continually iterating until the queue is empty. For each iteration, we remove the node at the head of the queue and “visit” that node. 
 After removing each node from the queue, we also insert all of its children into the queue.
+Important things to remember:
+- We need at least one element to kick start the process
 */
 
 function bfs(graph, startNode) {
