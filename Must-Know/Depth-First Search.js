@@ -10,6 +10,7 @@ things you know are 1) your value and 2) how to get to your children. So the rec
 Two things we need to decide to define the function:
 1. What do we want to return after visiting a node? (use return value to pass information from children to parent) 
 2. What state do we need to maintain to compute the return value for the current node? (use state to pass information from parent to children)
+DFS uses less memory than BFS for wide graphs, since BFS has to keep all the nodes in the queue, and for wide graphs this can be quite large.
 */
 
 //Iterative
