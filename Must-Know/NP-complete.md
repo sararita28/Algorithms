@@ -24,3 +24,6 @@ More precisely, each input to the problem should be associated with a set of sol
 - If any NP-complete problem can be solved quickly, then every problem in NP can, because the definition of an NP-complete problem states that every problem in NP must be quickly reducible to every NP-complete problem (that is, it can be reduced in polynomial time). Because of this, it is often said that NP-complete problems are harder or more difficult than NP problems in general.<br>
 - It is not known whether any polynomial-time algorithms will ever be found for NP-complete problems.<br>
 - When an NP-complete problem must be solved, one approach is to use a polynomial algorithm to approximate the solution; the answer thus obtained will not necessarily be optimal but will be reasonably close.
+
+### Algorithms that take polynomial time vs exponential time: 
+<img src="https://miro.medium.com/max/782/1*DPfmJ9YOFZIUJUVXZFBiQw.png" width="600px" />
