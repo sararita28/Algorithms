@@ -20,3 +20,24 @@ function maxSumSubarray(arr, k) {
   return max;
 }
 
+
+/*
+When you have a problem that mentions subarray/substring with EXACTLY K different numbers/letters there's one variation of the sliding window that you could implement.
+Note that: exactly(K) = atMost(K) - atMost(K-1) 
+What you want to do is write a sliding window helper function that will return the number of subarrays with at most K distinct elements.
+Example: the following code is the solution to the 1248. Count number of nice subarrays LC question
+*/
+
+const numberOfSubarrays = (nums, k) => {
+    return atMost(nums, k) - atMost(nums, k - 1);
+}
+
+function atMost(nums, k) {
+    let res = 0, left = 0;
+    for (let right = 0; right < nums.length; right++) {
+        k -= nums[right] % 2;
+        while (k < 0) k += nums[left++] % 2;
+        res += right - left + 1;
+    }
+    return res;
+}
