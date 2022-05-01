@@ -65,4 +65,5 @@
 <ul> Keep in mind: 
   <li>A heap is really good at basic ordering and keeping track of max & mins.</li>
   <li>Using a hash table is a more efficient way of adding/removing elements from a binary heap.</li>
+  <li>Max heap & max priority queues allow access to the max value in constant time and perform replacements in logarithmic time.</li>
 </ul>
