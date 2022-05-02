@@ -48,9 +48,18 @@ Note that we only allow getting and deleting the element with min/max key and NO
   </tr>
 </table>
 
-<h4>Turning Min PQ into Max PQ</h4>
+<h3>Turning Min PQ into Max PQ</h3>
 <p>Since elements in PQ are comparable they implement some sort of <em>comparable interface</em> which we can <em>negate/invert</em> to achieve a Max heap.</p>
 
 <h3>Indexed Priority Queue</h3>
 <p>An <b>Indexed Priority Queue (IPQ)</b> is a traditional priority queue variant which on top of the regular PQ operations supports quick updates and deletions of key-value pairs. IPQ allows you to dynamically update the value/priority of certain keys. The first step to using an IPQ is to assign index values to all the keys forming a bidirectional mapping.</p>
+
+<h3>Implement Priority Queue using an array</h3>
+To do this, we could use: 
+<ul> 
+  <li>an unsorted array, insert could be O(1) as we just have to put it at the end but finding and deleting min value would be O(n). </li> 
+  <li>a sorted array. Finding the min would be O(1) but inserting would be O(n).</li>
+  <li>a heap.</li>
+  <li>The simplest way to implement a max heap is to reverse the sign of the number before we push it into the heap and reverse it again when you pop it out.</li>
+</ul>
 
