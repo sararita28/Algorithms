@@ -1,9 +1,11 @@
+Dynamic programming is an algorithmic optimization technique that breaks down a complicated problem into smaller overlapping subproblems in a recursive manner and use solutions to the subproblems to construct solution to the original problem.
+
 Good potential candidates (problems) for dynamic programming: 
 - The problem is recursive in nature and thus can be broken down into sub problems
 - The sub problems will usually overlap at some point (i.e the program will have to solve the same problem at least more than once).
 - The problem calls for optimization (minimization/maximization)
 
-To solve a problem using DP. <b>You could either use Recursion and store the repeating computations using memoization OR implement a bottom-up approach.</b>
+To solve a problem using DP. <b>You could either use recursion and store the repeating computations using memoization OR implement a bottom-up approach.</b>
 
 Let's showcase these 2 approaches by solving the fibonacci problem
 
