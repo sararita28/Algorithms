@@ -43,9 +43,9 @@ possible states is called a State-space Tree. Each node of the state-space tree 
 a particular combination). Leaf nodes are the solutions to the problem. Combinatorial search problems boil down to DFS/backtracking on the state-space 
 tree. Since the search space can be quite large, we often have to "prune" the tree, i.e. discard branches. 
 Three steps to conquer combinatorial search problems: 
-1. Identify the state(s): What state do we need to know whether we have reached a solution. What state do we need to decide which child nodes should be 
+1. Draw the state-space tree.
+2. Identify the state(s): What state do we need to know whether we have reached a solution. What state do we need to decide which child nodes should be 
 visited next and which ones should be pruned.
-2. Draw the state-space tree.
 3. DFS/backtrack on the state-space tree.
 
 backtracking template (for step 3):
