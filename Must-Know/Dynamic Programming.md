@@ -54,6 +54,8 @@ Bottom-up pros:
   <li> No recursion, and thus no system stack overflow although not a huge concern for normal coding interviews.</li> 
 </ul>
 Deciding on top-down or bottom-up depends on the problem. Some types of problems are easier to reason and solve with top-down than bottom-up and vice versa.
+In terms of algorithm efficiency, they're the same. They should both scale the same. 
+The bottom-up solution will avoid the overhead of the recursive calls needed in the top-down version. In general, though, avoiding the extra work is better than avoiding the function call overhead.
 
   ### Greedy algorithm vs. Dynamic programming
 
