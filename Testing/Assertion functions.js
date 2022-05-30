@@ -19,11 +19,31 @@ function assertArraysEqual(actual, expected, testName) {
       break;
     }
   }
-
   if (sameLength && sameValue) {
     console.log('passed')
   } else {
     console.log('FAILED [' + testName + '] Expected "'+ expected + '", but got "' + actual + '"')
+  }
+}
 
+// assertObjectsEqual
+// takes 3 parameters: actual (object with scalars; ideally result of calling function), expected (object with scalars; theoretical result of calling function; i.e. what we expect it to return), testName (string; describes what a call to assertObjectsEqual is verifying about the function being tested.)
+function assertObjectsEqual(actual, expected, testName) {
+   actual = JSON.stringify(actual)
+   expected = JSON.stringify(expected)
+    if (actual === expected) { 
+      console.log('passed')
+    } else {
+      console.log("FAILED ["+ testName + "] Expected "+ expected + ", but got "+ actual)
+    }
+}
+
+// assertWithinRange
+// takes 4 parameters: low (value representing lower bound of range), high (value representing higher bound of range), actual (value; ideally result of calling function), testName(string; describes what a call to assertWithinRange is verifying)
+function assertWithinRange(low, high, actual, testName) {
+  if (actual>=low && actual <=high) {
+    console.log('passed')
+  } else {
+    console.log('FAIL ['+testName+'] "'+actual+'" not within range '+low+' to ' +high)
   }
 }
