@@ -71,4 +71,5 @@ DFS uses less memory than BFS for wide graphs, since BFS has to keep all the nod
   <li>DFS uses a stack (often via recursion) while BFS uses a queue.</li>
   <li>It's very common to use Hash maps in graph problems.</li>
   <li>One way to verify if a graph doesn't contain directed cycles is by using Tarjan's algorithm</li>
+  <li>DFS uses less memory than BFS for wide graphs, since BFS has to keep all the nodes in the queue, and for wide graphs this can be quite large.</li>
   </ul>
