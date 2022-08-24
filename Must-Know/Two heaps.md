@@ -1,5 +1,5 @@
-To be able to solve these kinds of problems, we want to know the smallest element in one part and the biggest element in the other part. Two Heaps 
-pattern uses 2 Heap data structure to solve these problems; a Min Heap to find the smallest element and a Max Heap to find the biggest element.
+We use two heaps when we want to know the smallest element in one part and the biggest element in the other part. <br>
+The two Heaps pattern uses 2 Heap data structure to solve these problems; a Min Heap to find the smallest element and a Max Heap to find the biggest element.
 
 Below is the explanation for the following implementation of minHeap:
 class MinHeap is initially set with a dummy node (null)
