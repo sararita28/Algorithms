@@ -3,3 +3,7 @@
 - Manually set specific number n of digits after decimal ```str.toFixed(n)```
 - Regex to remove all special chars : ```let result = stringToReplace.replace(/[^\w\s]/gi, '')```
 - Check if char is letter : ```(/[a-zA-Z]/).test(char)``` 
+- Convert character to its keycode : ```let code = ('a').charCodeAt(0)```
+- Convert keycode to character : ```let char = String.fromCharCode(code)```
+- Printable ASCII table : https://theasciicode.com.ar/
+- 
