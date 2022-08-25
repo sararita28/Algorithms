@@ -1,3 +1,4 @@
 - Create a 2D array :  ```let arr = Array.from(Array(m), () => new Array(n));```
 - Calculate the absolute difference between 2 numbers a and b: ```Math.abs(a - b)```
 - Manually set specific number n of digits after decimal ```str.toFixed(n)```
+- Regex to remove all special chars : ```let result = stringToReplace.replace(/[^\w\s]/gi, '')```
