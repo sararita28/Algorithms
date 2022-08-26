@@ -6,4 +6,5 @@
 - Convert character to its keycode : ```let code = ('a').charCodeAt(0)```
 - Convert keycode to character : ```let char = String.fromCharCode(code)```
 - Printable ASCII table : https://theasciicode.com.ar/
-- 
+- Split a string : ``` str.split('')``` //splits the string by characters (you can also split it by spaces or something else or put a limit parameter). Returns an array of the result
+- Join array : ```arr.join('')``` //You can join the strings by connecting them with nothing or a space, a comma or anything else. Returns a string of the result 
