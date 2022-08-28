@@ -8,7 +8,7 @@ the latter drawback at the price of exploring the tree's top parts over and over
 memory.
 
 Below is the pseudocode for bfs:
-```
+
 procedure BFS(G, root) is
        let Q be a queue
        label root as explored
@@ -21,8 +21,8 @@ procedure BFS(G, root) is
               if w is not labeled as explored then
                   label w as explored
                   Q.enqueue(w)
-```
-
+                  
+*/
 Uses a queue to keep track of all the nodes of a level before jumping onto the next level. Any problem involving the traversal of a tree in a 
 level-by-level order can be efficiently solved using this approach. The Tree BFS pattern works by pushing the root node to the queue and then 
 continually iterating until the queue is empty. For each iteration, we remove the node at the head of the queue and “visit” that node. 
