@@ -1,6 +1,22 @@
 A monotonic queue is a DS where the order of the elements is strictly increasing or strictly decreasing. Note that sometimes monotonic queues may contain
 duplicate values (even though this goes against the strict monotonic condition).
 
+Strictly increasing monotonic queue pseudocode:
+```
+function monotonicQ (input array)
+    let Q be monotonic queue
+    let result be output array
+    Loop through input array //with indices
+        while Q is not empty and the current element is greater than last elemenent of queue 
+            pop from Q
+        add index to Q
+        if reached a solution 
+            add to result
+        if out of bounds
+            shift from Q
+    return result
+```
+
 Below is an answer example to the '239. Sliding Window Maximum' leetcode question using monotonic queue:
 
 
